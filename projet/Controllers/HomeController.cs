@@ -49,6 +49,10 @@ namespace projet.Controllers
         {
             return View("contact");
         }
-        
+        public IActionResult LoginAdmin()
+        {
+            return View();
+        }
+
     }
 }
