@@ -27,7 +27,9 @@ namespace projet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<RepositoryEnseignant, EnseignantServices>();
+            //services.AddTransient<RepositoryEnseignant, EnseignantServices>();
+            services.AddScoped<RepositoryEnseignant, EnseignantServices>();
+
             services.AddDbContext<PrjContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionStr")));
             
             services.AddDbContext<PrjContext>(options => options.UseInMemoryDatabase("PrjContext"));
@@ -39,6 +41,7 @@ namespace projet
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddScoped<RepositoryModule, ModuleService>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

@@ -1,0 +1,45 @@
+﻿@model projet.Models.chapitre
+
+@{    Layout = "~/Views/Shared/_LayoutEnseignant.cshtml";
+
+    ViewData["Title"] = "Delete";
+}
+<h2>Supprimer un chapitre</h2>
+@using (Html.BeginForm("DeleteFacture", "Secretaire", FormMethod.Post, new { id = "popupForm" }))
+{
+    @Html.HiddenFor(a => a.id_chap)
+    <div class="form-group">
+        <label>Numero du chapitre</label>
+        <p>@Model.id_chap</p>
+    </div>
+
+    <div class="form-group">
+        <label>Type du chapitre</label>
+        <p>@Model.type</p>
+    </div>
+
+    <div class="form-group">
+        <label>Contenu du chapitre</label>
+        <p>@Model.contenu</p>
+    </div>
+    <div class="form-group">
+        <label>Date du depots</label>
+        <p>@Model.date_depot</p>
+    </div>
+
+    <div class="form-group">
+        <label>Responsable</label>
+        <p>@Model.responsable</p>
+    </div>
+    <div class="form-group">
+        <label>Numero du module</label>
+        <p>@Model.id_mod</p>
+    </div>
+    <div>
+        <input type="submit" value="Delete" />
+    </div>
+}
+
+
+
+
