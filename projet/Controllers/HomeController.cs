@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using projet.Models;
 namespace projet.Controllers
@@ -11,10 +13,11 @@ namespace projet.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly PrjContext _context;
+        public HomeController(ILogger<HomeController> logger, PrjContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -52,6 +55,44 @@ namespace projet.Controllers
         public IActionResult LoginAdmin()
         {
             return View();
+        }
+        public IActionResult LoginEnseignant()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> LoginAdminProcessed([Bind("username,mdp")] Admin claimedAdmin)
+        {
+            Admin admin = await _context.Admins.Where(x => x.username == claimedAdmin.username && x.mdp == claimedAdmin.mdp).FirstOrDefaultAsync();
+            if (admin != null)
+            {
+                return RedirectToAction("Index", "Admins");
+            }
+            else
+            {
+                ViewBag.error = "username or password is invalid,Try again !";
+                return View("LoginAdmin");
+            }
+            // 
+            
+        }
+        [HttpPost]
+        public async Task<IActionResult> LoginEnseignantProcessed([Bind("email,mdp")] Enseignant claimedEnseignant)
+        {
+            Enseignant enseignant=await _context.Enseignants.Where(x => x.email == claimedEnseignant.email && x.mdp == claimedEnseignant.mdp).FirstOrDefaultAsync();
+            
+            if (enseignant != null)
+            {
+                HttpContext.Session.SetString("nom", enseignant.nom +" "+ enseignant.prenom);
+                HttpContext.Session.SetString("username", enseignant.username);
+                HttpContext.Session.SetInt32("id", enseignant.Id);
+                return RedirectToAction("Index1", "Modules");
+            }
+            else
+            {
+                ViewBag.error = "email or password is invalid,Try again !";
+                return View("LoginEnseignant");
+            }
         }
 
     }

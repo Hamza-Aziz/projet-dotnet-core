@@ -226,63 +226,6 @@ C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netc
 C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.pdb
 C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.genruntimeconfig.cache
 C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\appsettings.Development.json
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\appsettings.json
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.deps.json
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.dll
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.pdb
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Create.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\CreateEnsFormulaire.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Delete.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Details.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Edit.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\EditEns.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ImportExcelAddEns.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Index.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ListExcelAddEns.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Create.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Delete.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Details.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Edit.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Index.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\about-us.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\blog.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\contact.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\course-details.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\courses.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\elements.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\single-blog.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.dll
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.pdb
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.genruntimeconfig.cache
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
-E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\LoginAdmin.cshtml.g.cs
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.deps.json
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
@@ -348,3 +291,82 @@ C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.dll
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.pdb
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+<<<<<<< HEAD
+=======
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Create.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Delete.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Details.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Edit.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Index.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Index1.g.cshtml.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\appsettings.json
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.deps.json
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.dll
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.pdb
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Create.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\CreateEnsFormulaire.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Delete.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Details.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Edit.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\EditEns.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ImportExcelAddEns.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Index.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ListExcelAddEns.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Create.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Delete.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Details.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Edit.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Index.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Create.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Delete.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Details.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Edit.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Index.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\about-us.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\blog.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\contact.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\course-details.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\courses.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\elements.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\LoginAdmin.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\LoginEnseignant.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\single-blog.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Create.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Delete.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Details.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Edit.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Index.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Index1.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutEnseignant.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.dll
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.pdb
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.genruntimeconfig.cache
+E:\ASP .NET CORE TRAINING\ProjetASP-.NETCORE\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+>>>>>>> 4f3acd4c7373430946e251b2ebb923565852d942
