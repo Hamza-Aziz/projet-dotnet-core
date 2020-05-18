@@ -5,7 +5,7 @@
     ViewData["Title"] = "Delete";
 }
 <h2>Supprimer un chapitre</h2>
-@using (Html.BeginForm("DeleteFacture", "Secretaire", FormMethod.Post, new { id = "popupForm" }))
+@using (Html.BeginForm("Delete", "chapitres", FormMethod.Post, new { id = "popupForm" }))
 {
     @Html.HiddenFor(a => a.id_chap)
     <div class="form-group">

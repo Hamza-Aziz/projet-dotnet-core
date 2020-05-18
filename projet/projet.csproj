@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\FichierAddDBEnseignants\" />
+    <Folder Include="wwwroot\UploadChap\" />
     <Folder Include="wwwroot\UploadImages\" />
   </ItemGroup>
 
