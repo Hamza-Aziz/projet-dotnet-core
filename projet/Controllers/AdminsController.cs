@@ -13,6 +13,7 @@ using NPOI.XSSF.UserModel;
 using Microsoft.EntityFrameworkCore;
 using projet.Models;
 using projet.Services;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace projet.Controllers
 {
@@ -21,12 +22,15 @@ namespace projet.Controllers
         private readonly PrjContext _context;
         private readonly IHostingEnvironment _hostingEnvironment;
         private List<Enseignant> listEns = new List<Enseignant>();
-
         private RepositoryEnseignant  repo;
-        public AdminsController(RepositoryEnseignant rep, IHostingEnvironment hostingEnvironment)
+        private RepositoryFiliere repof;
+        public AdminsController(RepositoryFiliere f,RepositoryEnseignant rep, IHostingEnvironment hostingEnvironment)
         {
             repo = rep;
             _hostingEnvironment = hostingEnvironment;
+            repof = f;
+          
+
         }
 
         /*************************************************operation by Admin*******************************************************/
@@ -405,5 +409,97 @@ namespace projet.Controllers
         {
             return _context.Admins.Any(e => e.Id == id);
         }
+
+
+        /*************************************************operation Filiere*******************************************************/
+        //Add filiere
+        public IActionResult Addfiliere()
+        {
+            return View();
+        }
+
+        public IActionResult Createfil(String nomfil)
+        {
+
+            if (nomfil == null)
+            {
+                ViewBag.msg = "le champ nom de filière est vide";
+            }
+            else
+            {
+                Filiere f = new Filiere();
+                f.nom_fil = nomfil;
+                repof.Savefil(f);
+                ViewBag.msg = "Insertion de filière avec succés";
+            }
+
+            return View(nameof(Addfiliere));
+        }
+
+        //List des filières
+
+        public IActionResult Listf()
+        {
+            return View(repof.FindAllfil());
+        }
+
+        //Delete filière
+        public IActionResult Deletefil(int Id)
+        {
+            repof.Deletefil(Id);
+            return View("Listf", repof.FindAllfil());
+        }
+
+
+        //Update Filière 
+
+        public IActionResult Editfil(int Id)
+        {
+            var fil = repof.GetfilbyID(Id);
+            return View(fil);
+        }
+
+        //Update filiere Action
+
+        [HttpPost]
+        public async Task<IActionResult> Editfiliere(int id_fil, [Bind("nom_fil")] Filiere fil)
+        {
+            repof.Updatefil(fil);
+            return View("Listf", repof.FindAllfil());
+        }
+
+
+        //Add niveaux
+        public IActionResult Createniv()
+        {
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+            return View();
+        }
+
+
+        public IActionResult Createniveau(String niveau,int id_fil)
+        {
+            
+
+            if(niveau==null)
+            {
+                ViewBag.msg= "Veillez remplir tous les champs";
+            }
+            else { 
+            
+                niveau niv = new niveau();
+                niv.nom_niv = niveau;
+                niv.id_fil = id_fil;
+                repof.Saveniv(niv);
+                ViewBag.msg = "Insertion avec succes";
+            }
+
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+
+            return View(nameof(Createniv));
+        }
+
+
+
     }
 }

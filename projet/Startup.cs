@@ -42,6 +42,7 @@ namespace projet
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddScoped<RepositoryModule, ModuleService>();
+            services.AddScoped<RepositoryFiliere,FiliereServices>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
