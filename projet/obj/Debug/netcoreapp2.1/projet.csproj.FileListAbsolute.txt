@@ -1,0 +1,294 @@
+C:\Users\azerty\source\repos\projet\projet\bin\Debug\netcoreapp2.1\projet.deps.json
+C:\Users\azerty\source\repos\projet\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
+C:\Users\azerty\source\repos\projet\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
+C:\Users\azerty\source\repos\projet\projet\bin\Debug\netcoreapp2.1\projet.dll
+C:\Users\azerty\source\repos\projet\projet\bin\Debug\netcoreapp2.1\projet.pdb
+C:\Users\azerty\source\repos\projet\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
+C:\Users\azerty\source\repos\projet\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.dll
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.pdb
+C:\Users\azerty\source\repos\projet\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+D:\s8\Projet.netCore\projet\projet\bin\Debug\netcoreapp2.1\projet.deps.json
+D:\s8\Projet.netCore\projet\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
+D:\s8\Projet.netCore\projet\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
+D:\s8\Projet.netCore\projet\projet\bin\Debug\netcoreapp2.1\projet.dll
+D:\s8\Projet.netCore\projet\projet\bin\Debug\netcoreapp2.1\projet.pdb
+D:\s8\Projet.netCore\projet\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
+D:\s8\Projet.netCore\projet\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.dll
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.pdb
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Create.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Delete.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Details.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Edit.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ImportExcelAddEns.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Index.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ListExcelAddEns.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Create.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Delete.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Details.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Edit.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Index.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\CreateEnsFormulaire.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.g.cshtml.cs
+D:\s8\Projet.netCore\projet\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\EditEns.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\bin\Debug\netcoreapp2.1\projet.deps.json
+D:\s8\ProjetCore1\Projet3\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
+D:\s8\ProjetCore1\Projet3\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
+D:\s8\ProjetCore1\Projet3\projet\bin\Debug\netcoreapp2.1\projet.dll
+D:\s8\ProjetCore1\Projet3\projet\bin\Debug\netcoreapp2.1\projet.pdb
+D:\s8\ProjetCore1\Projet3\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
+D:\s8\ProjetCore1\Projet3\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Create.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\CreateEnsFormulaire.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Delete.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Details.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Edit.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\EditEns.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ImportExcelAddEns.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Index.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ListExcelAddEns.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Create.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Delete.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Details.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Edit.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Index.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.dll
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.pdb
+D:\s8\ProjetCore1\Projet3\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.deps.json
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.dll
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.pdb
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Create.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\CreateEnsFormulaire.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Delete.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Details.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Edit.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\EditEns.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ImportExcelAddEns.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Index.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ListExcelAddEns.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Create.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Delete.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Details.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Edit.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Index.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.dll
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.pdb
+D:\s8\ProjetCore1\GitProjet\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.deps.json
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.dll
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.pdb
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Create.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\CreateEnsFormulaire.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Delete.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Details.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Edit.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\EditEns.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ImportExcelAddEns.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Index.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ListExcelAddEns.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Create.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Delete.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Details.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Edit.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Index.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\about-us.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\blog.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\contact.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\course-details.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\courses.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\elements.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\single-blog.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.dll
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.pdb
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.genruntimeconfig.cache
+C:\Users\lenovo\Desktop\projet c# concours\PrjCore\PrjCore\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+D:\projet-dotnet-core-master\projet\bin\Debug\netcoreapp2.1\projet.deps.json
+D:\projet-dotnet-core-master\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
+D:\projet-dotnet-core-master\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
+D:\projet-dotnet-core-master\projet\bin\Debug\netcoreapp2.1\projet.dll
+D:\projet-dotnet-core-master\projet\bin\Debug\netcoreapp2.1\projet.pdb
+D:\projet-dotnet-core-master\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
+D:\projet-dotnet-core-master\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Add_module.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Create.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\CreateEnsFormulaire.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Delete.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Details.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Edit.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\EditEns.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ImportExcelAddEns.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Index.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\ListExcelAddEns.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Create.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Delete.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Details.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Edit.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Enseignants\Index.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\about-us.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\blog.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\contact.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\course-details.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\courses.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\elements.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Home\single-blog.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.RazorTargetAssemblyInfo.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.Views.pdb
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.dll
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.pdb
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Delete.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Details.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Edit.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Index.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Filieres\Create.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Filieres\Delete.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Filieres\Details.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Filieres\Edit.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Filieres\Index.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\ImportExcelAddEns.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\ListExcelAddEns.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\TudoEns.g.cshtml.cs
+D:\projet-dotnet-core-master\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\CreateModule.g.cshtml.cs

@@ -1,0 +1,60 @@
+﻿@model projet.Models.Enseignant
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Enseignant</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.prenom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.prenom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.mdp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.mdp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.telephone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.telephone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.photo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.photo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
