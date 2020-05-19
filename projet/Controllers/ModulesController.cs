@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -36,6 +37,7 @@ namespace projet.Controllers
         public async Task<IActionResult> Index()
         {
             var prjContext = _context.Modules.Include(e => e.Enseignant).Include(e => e.niveau);
+   
             return View(await prjContext.ToListAsync());
         }
 
@@ -174,10 +176,11 @@ namespace projet.Controllers
         public IActionResult Index1()
         {
             var mode = s1.FindAllMod();
-
+            ViewBag.nom = HttpContext.Session.GetString("nom");
             return View(mode);
         }
 
+  
         private bool ModuleExists(int id)
         {
             return _context.Modules.Any(e => e.id_mod == id);
