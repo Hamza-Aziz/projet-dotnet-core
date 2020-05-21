@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -10,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using projet.Models;
 using projet.Services;
 
@@ -29,7 +31,11 @@ namespace projet
         {
             //services.AddTransient<RepositoryEnseignant, EnseignantServices>();
             services.AddScoped<RepositoryEnseignant, EnseignantServices>();
+            services.AddSingleton<IFileProvider>(
+           new PhysicalFileProvider(
+               Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
 
+            services.AddMvc();
             services.AddDbContext<PrjContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionStr")));
             
             services.AddDbContext<PrjContext>(options => options.UseInMemoryDatabase("PrjContext"));

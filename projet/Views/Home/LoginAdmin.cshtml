@@ -37,10 +37,10 @@
                                 <span class="text">+953012 3654 896</span>
                             </span>
                         </a>
-                        <a href="mailto:support@colorlib.com">
+                        <a href="http://www.ensas.uca.ma/">
                             <span class="lnr lnr-envelope"></span>
                             <span class="text">
-                                <span class="text">support@colorlib.com</span>
+                                <span class="text">Ensas</span>
                             </span>
                         </a>
                     </div>
@@ -52,6 +52,16 @@
             </div>
         </div>
 
+        <div class="main_menu">
+            <div class="search_input" id="search_input_box">
+                <div class="container">
+                    <form class="d-flex justify-content-between" asp-action="Courses" method="post">
+                        <input type="text" class="form-control" id="searchString" name="searchString" placeholder="Search Here">
+                        <button type="submit" class="btn"></button>
+                        <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+                    </form>
+                </div>
+            </div>
 
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
@@ -68,23 +78,7 @@
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item active"><div class="nav-link">@Html.ActionLink("Home", "Index", "Home")</div></li>
                             <li class="nav-item"><div class="nav-link">@Html.ActionLink("About", "About", "Home")</div></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                   aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Courses", "Courses", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Course Details", "CoursesDetail", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Elements", "Elements", "Home")</div></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                   aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Blog", "Blog", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Blog Details", "BlogDetail", "Home")</div></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><div class="nav-link">@Html.ActionLink("Courses", "Courses", "Home")</div>
                             <li class="nav-item"><div class="nav-link">@Html.ActionLink("Contact", "Contact", "Home")</div></li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link search" id="search">
@@ -106,9 +100,9 @@
                     </span>
                     @if (ViewBag.error != null)
                     {
-                <div class="alert alert-danger" role="alert">
-                    @ViewBag.error
-                </div>
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.error
+                        </div>
                     }
 
                     <span class="txt1 p-b-11">
