@@ -212,3 +212,7 @@ C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\pro
 C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.pdb
 C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.genruntimeconfig.cache
 C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Addfiliere.cshtml.g.cs
+C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Createniv.cshtml.g.cs
+C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Listf.cshtml.g.cs
+C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Editfil.cshtml.g.cs

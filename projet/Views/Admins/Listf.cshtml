@@ -1,0 +1,76 @@
+﻿
+@model IEnumerable<projet.Models.Filiere>
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--external css-->
+<link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="~/css/style.css" rel="stylesheet">
+<link href="~/css/style-responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="~/css/to-do.css">
+
+<br />
+<br />
+<section id="main-content">
+    <br />
+
+    <br />
+    <div class="row mt">
+        <div class="col-md-12">
+            <section class="task-panel tasks-widget">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h5><i class="fa fa-tasks"></i> Modify Or Delete Filiere</h5>
+                    </div>
+                   <br/>
+                    <p class="bg-info" style="margin-left:500px;width:300px;padding-left:40px">@ViewBag.msg</p>
+                    
+                    <br>
+                </div>
+                <div class="panel-body">
+                    <div class="task-content">
+
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.nom_fil)
+                                    </th>
+
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.nom_fil)
+                                        </td>
+
+                                        <td>
+
+                                            <button class="btn btn-primary btn-xs"><a asp-action="Editfil" asp-route-id="@item.id_fil"><i class="fa fa-pencil bg-primary"></i> </a></button>
+                                            <button class="btn btn-danger btn-xs"> <a asp-action="Deletefil" asp-route-id="@item.id_fil"><i class="fa fa-trash-o  bg-primary"></i></a></button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+</section>
+
+

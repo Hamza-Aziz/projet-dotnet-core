@@ -13,6 +13,7 @@ using NPOI.XSSF.UserModel;
 using Microsoft.EntityFrameworkCore;
 using projet.Models;
 using projet.Services;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace projet.Controllers
 {
@@ -21,12 +22,15 @@ namespace projet.Controllers
         private readonly PrjContext _context;
         private readonly IHostingEnvironment _hostingEnvironment;
         private List<Enseignant> listEns = new List<Enseignant>();
-
-        private RepositoryEnseignant  repo;
-        public AdminsController(RepositoryEnseignant rep, IHostingEnvironment hostingEnvironment)
+        private RepositoryEnseignant repo;
+        private RepositoryFiliere repof;
+        public AdminsController(RepositoryFiliere f, RepositoryEnseignant rep, IHostingEnvironment hostingEnvironment)
         {
             repo = rep;
             _hostingEnvironment = hostingEnvironment;
+            repof = f;
+
+
         }
 
         /*************************************************operation by Admin*******************************************************/
@@ -46,7 +50,7 @@ namespace projet.Controllers
             string folderName = "FichierAddDBEnseignants";
             string webRootPath = _hostingEnvironment.WebRootPath;
             string newPath = Path.Combine(webRootPath, folderName);
-           
+
             StringBuilder sb = new StringBuilder();
             if (!Directory.Exists(newPath))
             {
@@ -55,7 +59,7 @@ namespace projet.Controllers
             if (file.Length > 0)
             {
 
-               
+
                 string sFileExtension = Path.GetExtension(file.FileName).ToLower();
                 ISheet sheet;
                 string fullPath = Path.Combine(newPath, file.FileName);
@@ -86,13 +90,13 @@ namespace projet.Controllers
                     }
                     sb.Append("</tr>");
                     sb.AppendLine("<tr>");
-                  
+
                     for (int i = (sheet.FirstRowNum + 1); i <= sheet.LastRowNum; i++) //Read Excel File
                     {
                         IRow row = sheet.GetRow(i);
                         if (row == null) continue;
                         if (row.Cells.All(d => d.CellType == CellType.Blank)) continue;
-                       
+
                         int c = 0;
                         Enseignant ens = new Enseignant();
                         for (int j = row.FirstCellNum; j < cellCount; j++)
@@ -100,62 +104,62 @@ namespace projet.Controllers
                             if (row.GetCell(j) != null)
 
 
-                            if (c == 0)
-                            {
+                                if (c == 0)
+                                {
                                     ens.nom = row.GetCell(j).ToString();
-                                c++;
-                            }
-                            else if (c == 1)
-                            {
-                                ens.prenom = row.GetCell(j).ToString();
-                                c++;
-                            }
-                            else if(c ==2)
-                            {
-                                ens.username = row.GetCell(j).ToString();
+                                    c++;
+                                }
+                                else if (c == 1)
+                                {
+                                    ens.prenom = row.GetCell(j).ToString();
+                                    c++;
+                                }
+                                else if (c == 2)
+                                {
+                                    ens.username = row.GetCell(j).ToString();
                                     c++;
 
-                            }
-                          else if (c == 3)
-                            {
-                                ens.mdp = row.GetCell(j).ToString();
-                                c++;
-                            }
-                            else if (c == 4)
-                            {
-                                ens.email= row.GetCell(j).ToString();
-                                c++;
-                            }
-                            else if (c == 5)
-                            {
+                                }
+                                else if (c == 3)
+                                {
+                                    ens.mdp = row.GetCell(j).ToString();
+                                    c++;
+                                }
+                                else if (c == 4)
+                                {
+                                    ens.email = row.GetCell(j).ToString();
+                                    c++;
+                                }
+                                else if (c == 5)
+                                {
                                     ens.telephone = row.GetCell(j).ToString();
                                     c++;
-                            }
-                            else if (c == 6)
-                            {
-                                
+                                }
+                                else if (c == 6)
+                                {
+
                                     ens.photo = row.GetCell(j).ToString();
-                                
+
                                     listEns.Add(ens);
                                     repo.SaveEns(ens);
-                                  
+
                                     c = 0;
                                 }
 
 
-                               
-                        }
-                      
 
-                        
-                      
+                        }
+
+
+
+
                         sb.AppendLine("</tr>");
                     }
                     sb.Append("</table>");
 
                 }
             }
-        
+
             ViewBag.msg = "The list of teachers is imported into the database";
             return View("ListExcelAddEns", listEns);
         }
@@ -172,34 +176,35 @@ namespace projet.Controllers
             return View();
         }
         // create Teacher
-        public IActionResult CreateEns(string nom ,string prenom,string username,string mdp,string email,string telephone)
+        public IActionResult CreateEns(string nom, string prenom, string username, string mdp, string email, string telephone)
         {
 
-            if( nom!=null && prenom!=null && username!=null && mdp!=null && email!=null && telephone != null) {
-            IFormFile file = Request.Form.Files[0];
-            string folderName = "UploadImages";
-            string webRootPath = _hostingEnvironment.WebRootPath;
-            string newPath = Path.Combine(webRootPath, folderName);
-            if (!Directory.Exists(newPath))
+            if (nom != null && prenom != null && username != null && mdp != null && email != null && telephone != null)
             {
-                Directory.CreateDirectory(newPath);
-            }
-            if (file.Length > 0)
-            {
-                
-
-                string sFileExtension = Path.GetExtension(file.FileName).ToLower();
-                string fullPath = Path.Combine(newPath, file.FileName);
-                using (var stream = new FileStream(fullPath, FileMode.Create))
+                IFormFile file = Request.Form.Files[0];
+                string folderName = "UploadImages";
+                string webRootPath = _hostingEnvironment.WebRootPath;
+                string newPath = Path.Combine(webRootPath, folderName);
+                if (!Directory.Exists(newPath))
                 {
-                    file.CopyTo(stream);
-                    stream.Position = 0;
-                  
-                   
+                    Directory.CreateDirectory(newPath);
+                }
+                if (file.Length > 0)
+                {
+
+
+                    string sFileExtension = Path.GetExtension(file.FileName).ToLower();
+                    string fullPath = Path.Combine(newPath, file.FileName);
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        stream.Position = 0;
+
+
+
+                    }
 
                 }
-
-            }
 
                 Enseignant ens = new Enseignant();
                 ens.nom = nom;
@@ -220,13 +225,13 @@ namespace projet.Controllers
             return View("CreateEnsFormulaire");
         }
 
-        
+
         // modify & delete page 
 
-           public IActionResult TudoEns()
-           {
+        public IActionResult TudoEns()
+        {
             return View(repo.FindAllEns());
-           }
+        }
         // delete teacher 
         public IActionResult DeleteEns(int Id)
         {
@@ -241,7 +246,7 @@ namespace projet.Controllers
         }
 
 
-        
+
         [HttpPost]
         public async Task<IActionResult> EditEnsAction(int id, [Bind("Id,nom,prenom,username,mdp,email,telephone")] Enseignant enseignant)
         {
@@ -405,5 +410,108 @@ namespace projet.Controllers
         {
             return _context.Admins.Any(e => e.Id == id);
         }
+
+
+        /*************************************************operation Filiere*******************************************************/
+        //Add filiere
+        public IActionResult Addfiliere()
+        {
+            return View();
+        }
+
+        public IActionResult Createfil(String nomfil)
+        {
+
+            if (nomfil == null)
+            {
+                ViewBag.msg = "le champ nom de filière est vide";
+            }
+            else
+            {
+                Filiere f = new Filiere();
+                f.nom_fil = nomfil;
+                repof.Savefil(f);
+                ViewBag.msg = "Insertion de filière avec succés";
+            }
+
+            return View(nameof(Addfiliere));
+        }
+
+        //List des filières
+
+        public IActionResult Listf()
+        {
+
+            ViewBag.msg = "si vous supprimez une filière, ses niveaux seront aussi supprimés";
+            return View(repof.FindAllfil());
+        }
+
+        //Delete filière
+        public IActionResult Deletefil(int Id)
+        {
+            repof.Deletefil(Id);
+            return RedirectToAction("Listf");
+        }
+
+
+        //Update Filière 
+
+        public IActionResult Editfil(int Id)
+        {
+            var fil = repof.GetfilbyID(Id);
+            return View(fil);
+            
+        }
+
+        //Update filiere Action
+
+
+      
+
+
+        [HttpPost]
+        public IActionResult Editfiliere(int id_fil, [Bind("id_fil,nom_fil")] Filiere fil)
+        {
+            repof.Updatefil(fil);
+            return RedirectToAction("Listf");
+        }
+
+        //Add niveaux
+        public IActionResult Createniv()
+        {
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+            return View();
+        }
+
+        public IActionResult Createniveau(String niveau, int id_fil)
+        {
+
+
+            if (niveau == null)
+            {
+                ViewBag.msg = "Veillez remplir tous les champs";
+            }
+            else
+            {
+
+                niveau niv = new niveau();
+                niv.nom_niv = niveau;
+                niv.id_fil = id_fil;
+                repof.Saveniv(niv);
+                ViewBag.msg = "Insertion avec succes";
+            }
+
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+
+            return View(nameof(Createniv));
+        }
+
+
+
+        public IActionResult logout()
+        {
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }
