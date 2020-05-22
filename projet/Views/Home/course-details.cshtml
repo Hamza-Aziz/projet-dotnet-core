@@ -33,15 +33,16 @@
                                 <span class="text">+953012 3654 896</span>
                             </span>
                         </a>
-                        <a href="mailto:support@colorlib.com">
+                        <a href="mailto:Ensas">
                             <span class="lnr lnr-envelope"></span>
                             <span class="text">
-                                <span class="text">support@colorlib.com</span>
+                                <span class="text">Ensas</span>
                             </span>
                         </a>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-8 header-top-right">
-                        <a href="#" class="text-uppercase">Login</a>
+                        <a href='@Url.Action("Index", "Admins")' class="text-uppercase">Administration</a>
+                        <a href='@Url.Action("Index", "Enseignants")' class="text-uppercase">Enseignants</a>
                     </div>
                 </div>
             </div>
@@ -73,23 +74,7 @@
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href='@Url.Action("Index", "Home")'>Home</a></li>
                             <li class="nav-item"><div class="nav-link">@Html.ActionLink("About", "About", "Home")</div></li>
-                            <li class="nav-item submenu dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Courses", "Courses", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Course Details", "CoursesDetail", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Elements", "Elements", "Home")</div></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Blog", "Blog", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Blog Details", "BlogDetail", "Home")</div></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><div class="nav-link">@Html.ActionLink("Courses", "Courses", "Home")</div></li>
                             <li class="nav-item"><div class="nav-link">@Html.ActionLink("Contact", "Contact", "Home")</div></li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link search" id="search">
@@ -113,9 +98,7 @@
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
                             <h2>Courses</h2>
-                            <p>In the history of modern astronomy, there is probably no one greater leap forward than
-                                the
-                                building and launch of the space telescope known as the Hubble.</p>
+                            <p>Bienvenu!!</p>
                             <div class="page_link">
                                 <a href='@Url.Action("Index", "Home")'>Home</a>
                                 <a href="courses.html">Courses</a>

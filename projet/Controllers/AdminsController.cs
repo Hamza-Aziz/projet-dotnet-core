@@ -405,10 +405,5 @@ namespace projet.Controllers
         {
             return _context.Admins.Any(e => e.Id == id);
         }
-        //////////////////////////add modules  part /////////////////////////////////////////////////
-        public IActionResult Add_module()
-        {
-            return View();
-        }
     }
 }

@@ -12,7 +12,6 @@ namespace projet.Controllers
     public class EnseignantsController : Controller
     {
         private readonly PrjContext _context;
-        private readonly PrjContext _contexta;
 
         public EnseignantsController(PrjContext context)
         {
@@ -46,8 +45,6 @@ namespace projet.Controllers
         // GET: Enseignants/Create
         public IActionResult Create()
         {
-            ViewData["Id"] = new SelectList(_contexta.Enseignants, "Id", "nom");
-
             return View();
         }
 

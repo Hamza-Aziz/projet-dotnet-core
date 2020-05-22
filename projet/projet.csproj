@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,23 +22,19 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
     <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1000" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="NPOI.Excel" Version="2.1.1" />
+    <PackageReference Include="Npoi.Mapper" Version="2.1.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\FichierAddDBEnseignants\" />
+    <Folder Include="wwwroot\UploadChap\" />
     <Folder Include="wwwroot\UploadImages\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Modules1\ImportExcelAddEns.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
-    <Content Update="Views\Modules1\ListExcelAddEns.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
-    <Content Update="Views\Modules1\TudoEns.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
     <Content Update="Views\Shared\_LayoutAdmin.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -10,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using projet.Models;
 using projet.Services;
 
@@ -27,19 +29,29 @@ namespace projet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<RepositoryEnseignant, EnseignantServices>();
+            //services.AddTransient<RepositoryEnseignant, EnseignantServices>();
+            services.AddScoped<RepositoryEnseignant, EnseignantServices>();
+            services.AddSingleton<IFileProvider>(
+           new PhysicalFileProvider(
+               Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
+
+            services.AddMvc();
             services.AddDbContext<PrjContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionStr")));
             
             services.AddDbContext<PrjContext>(options => options.UseInMemoryDatabase("PrjContext"));
-            //services.AddTransient<IEtudiantService, EtudiantServiceImpl>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_0).AddJsonOptions(options => { //For Maintaining Json Format
-                options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();});
-                services.Configure<CookiePolicyOptions>(options =>
+                options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+            });
+
+            //services.AddTransient<IEtudiantService, EtudiantServiceImpl>();
+            services.AddSession();
+            services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
+                options.CheckConsentNeeded = context => false;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddScoped<RepositoryModule, ModuleService>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -61,7 +73,7 @@ namespace projet
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

@@ -47,8 +47,8 @@ namespace projet.Controllers
         // GET: Modules1
         public async Task<IActionResult> Index()
         {
-            var prjContext = _context.Modules.Include(a=> a.Enseignant).Include(a=> a.niveau);
-          ViewBag.nomf = _context.Filieres.ToList();
+            var prjContext = _context.Modules.Include(a => a.Enseignant).Include(a => a.niveau);
+            ViewBag.nomf = _context.Filieres.ToList();
             List<Enseignant> listens = new List<Enseignant>();
             listens = (from Enseignant in _context.Enseignants select Enseignant).ToList();
             ViewBag.listofens = listens;
@@ -116,49 +116,52 @@ namespace projet.Controllers
                 await _context.SaveChangesAsync();
                 ViewBag.msg = "Module is inserted";
                 return View("Create");
-            }else {
+            }
+            else
+            {
                 ViewBag.msg = "Error fields to check inserted fields";
             }
             ViewData["Id"] = new SelectList(_context.Enseignants, "Id", "nom", @module.Id);
             ViewData["id_niv"] = new SelectList(_context.Niveaus, "id_niv", "nom_niv", @module.id_niv);
-       
+
             return View("Create");
         }
         //    Create
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult>  Create(int id_mod, string nom_mod,int id_niv ,int Id)
-        { Module mod = new Module();
+        public async Task<IActionResult> Create(int id_mod, string nom_mod, int id_niv, int Id)
+        {
+            Module mod = new Module();
             if (ModelState.IsValid)
             {
-           
-               
-            //Enseignant ens = _context.Enseignants.FirstOrDefault(a => a.Id == Id);
-            // niveau n = _context.Niveaus.FirstOrDefault(s => s.id_niv == id_niv);
-            mod.id_mod = id_mod;
-            mod.nom_mod = nom_mod;
-            mod.Id = Id;
-            mod.id_niv = id_niv;
-           // _context.Niveaus.Add(n);
-         //   _context.Enseignants.Add(ens);
-            _context.Add(mod);
-            await _context.SaveChangesAsync();
+
+
+                //Enseignant ens = _context.Enseignants.FirstOrDefault(a => a.Id == Id);
+                // niveau n = _context.Niveaus.FirstOrDefault(s => s.id_niv == id_niv);
+                mod.id_mod = id_mod;
+                mod.nom_mod = nom_mod;
+                mod.Id = Id;
+                mod.id_niv = id_niv;
+                // _context.Niveaus.Add(n);
+                //   _context.Enseignants.Add(ens);
+                _context.Add(mod);
+                await _context.SaveChangesAsync();
                 ViewBag.msg = "Module is inserted";
             }
             else { ViewBag.msg = "Error fields to check inserted fields"; }
             ViewData["Id"] = new SelectList(_context.Enseignants, "Id", "nom", mod.Id);
             ViewData["id_niv"] = new SelectList(_context.Niveaus, "id_niv", "nom_niv", mod.id_niv);
-          ViewBag.filiere = _context.Filieres.ToList();
+            ViewBag.filiere = _context.Filieres.ToList();
             return View("CreateModule");
         }
 
         // GET: Mo/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
-           
+
             var @module = await _context.Modules.FindAsync(id);
-           
+
             ViewData["Id"] = new SelectList(_context.Enseignants, "Id", "nom", @module.Id);
             ViewData["id_niv"] = new SelectList(_context.Niveaus.Where(a => a.id_niv == @module.id_niv), "id_niv", "nom_niv", @module.id_niv);
             return View(@module);
@@ -168,17 +171,17 @@ namespace projet.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        
+
         public async Task<ActionResult> Editmod(int id, [Bind("id_mod,nom_mod,Id,id_niv")] Module @module)
         {
-           
-          
-                    _context.Update(@module);
-                await _context.SaveChangesAsync();
-               
-            return View("TudoEns",_context.Modules.Include(a => a.Enseignant).Include(a => a.niveau.Filiere).ToList());
+
+
+            _context.Update(@module);
+            await _context.SaveChangesAsync();
+
+            return View("TudoEns", _context.Modules.Include(a => a.Enseignant).Include(a => a.niveau.Filiere).ToList());
         }
-        
+
         // GET: Modules1/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
@@ -188,7 +191,7 @@ namespace projet.Controllers
             return View("TudoEns", _context.Modules.Include(a => a.Enseignant).Include(a => a.niveau.Filiere).ToList());
         }
 
-        
+
         private bool ModuleExists(int id)
         {
             return _context.Modules.Any(e => e.id_mod == id);
@@ -210,7 +213,7 @@ namespace projet.Controllers
         // insert database teacher
 
         [HttpPost]
-        public async Task<IActionResult> OnPostImport(int id_mod ,int id_niv)
+        public async Task<IActionResult> OnPostImport(int id_mod, int id_niv)
         {
 
             IFormFile file = Request.Form.Files[0];
@@ -265,22 +268,22 @@ namespace projet.Controllers
                         if (row.Cells.All(d => d.CellType == CellType.Blank)) continue;
 
                         int c = 0;
-                       Module ens = new Module();
+                        Module ens = new Module();
                         for (int j = row.FirstCellNum; j < cellCount; j++)
                         {
-                           
-                            if (row.GetCell(j) != null)
-                                
 
-                            if (c == 0)
+                            if (row.GetCell(j) != null)
+
+
+                                if (c == 0)
                                 {
                                     ens.id_mod = id_mod;
                                     ens.nom_mod = row.GetCell(j).ToString();
                                     c++;
                                 }
                                 else if (c == 1)
-                                { 
-                                    int e = _context.Enseignants.Where(a => a.nom == row.GetCell(j).ToString()).Select(a=> a.Id).FirstOrDefault();
+                                {
+                                    int e = _context.Enseignants.Where(a => a.nom == row.GetCell(j).ToString()).Select(a => a.Id).FirstOrDefault();
                                     ens.Id = e;
 
                                     ViewBag.nameens = row.GetCell(j).ToString();
@@ -288,7 +291,7 @@ namespace projet.Controllers
 
                                     listexcelmodu.Add(ens);
                                     _context.Add(ens);
-                             await       _context.SaveChangesAsync();
+                                    await _context.SaveChangesAsync();
 
                                     c = 0;
                                 }
@@ -308,7 +311,7 @@ namespace projet.Controllers
             }
 
             ViewBag.msg = "The list of Modules is imported into the database";
-        
+
             return View("ListExcelAddEns", listexcelmodu);
         }
         public IActionResult ListExcelAddEns()
@@ -323,8 +326,8 @@ namespace projet.Controllers
 
         public IActionResult TudoEns()
         {
-            return View(_context.Modules.Include(a=>a.Enseignant).Include(a=> a.niveau.Filiere).ToList());
+            return View(_context.Modules.Include(a => a.Enseignant).Include(a => a.niveau.Filiere).ToList());
         }
-        
+
     }
 }

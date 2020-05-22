@@ -33,15 +33,16 @@
                                 <span class="text">+953012 3654 896</span>
                             </span>
                         </a>
-                        <a href="mailto:support@colorlib.com">
+                        <a href="mailto:Ensas">
                             <span class="lnr lnr-envelope"></span>
                             <span class="text">
-                                <span class="text">support@colorlib.com</span>
+                                <span class="text">Ensas</span>
                             </span>
                         </a>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-8 header-top-right">
-                        <a href="#" class="text-uppercase">Login</a>
+                        <a href='@Url.Action("Index", "Admins")' class="text-uppercase">Administration</a>
+                        <a href='@Url.Action("Index", "Enseignants")' class="text-uppercase">Enseignants</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +64,7 @@
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <a class="navbar-brand logo_h" href='@Url.Action("Index", "Home")'><img src="~/img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -73,23 +74,7 @@
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item active"><div class="nav-link">@Html.ActionLink("Home", "Index", "Home")</div></li>
                             <li class="nav-item"><div class="nav-link">@Html.ActionLink("About", "About", "Home")</div></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Courses", "Courses", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Course Details", "CoursesDetail", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Elements", "Elements", "Home")</div></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Blog", "Blog", "Home")</div></li>
-                                    <li class="nav-item"><div class="nav-link">@Html.ActionLink("Blog Details", "BlogDetail", "Home")</div></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><div class="nav-link">@Html.ActionLink("Courses", "Courses", "Home")</div></li>
                             <li class="nav-item"><div class="nav-link">@Html.ActionLink("Contact", "Contact", "Home")</div></li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link search" id="search">
@@ -103,7 +88,6 @@
         </div>
     </header>
     <!--================ End Header Menu Area =================-->
-
     <!--================Home Banner Area =================-->
     <section class="banner_area">
         <div class="banner_inner d-flex align-items-center">
@@ -113,9 +97,7 @@
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
                             <h2>Contact Us</h2>
-                            <p>In the history of modern astronomy, there is probably no one greater leap forward than
-                                the
-                                building and launch of the space telescope known as the Hubble.</p>
+                            <p>Bienvenu!!</p>
                             <div class="page_link">
                                 <a href='@Url.Action("Index", "Home")'>Home</a>
                                 <a href="contact.html">Contact</a>
@@ -127,36 +109,36 @@
         </div>
     </section>
     <!--================End Home Banner Area =================-->
-
+    <h2 style="text-align:center">@ViewBag.msg</h2>
     <!--================Contact Area =================-->
     <section class="contact_area section_gap">
         <div class="container">
-            <div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                data-mlat="40.701083" data-mlon="-74.1522848">
+            <div id="mapBox" class="mapBox" data-lat="32.326769" data-lon="-9.263722" data-zoom="13" data-info="Route Sidi Bouzid BP 63 Rue Sidi M'Barek, Safi 46000."
+                 data-mlat="32.326769" data-mlon="-9.263722">
             </div>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
-                            <h6>California, United States</h6>
-                            <p>Santa monica bullevard</p>
+                            <h6>Maroc Ensa Safi</h6>
+                            <p>Sidi bouzid</p>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-phone-handset"></i>
                             <h6><a href="#">00 (440) 9865 562</a></h6>
-                            <p>Mon to Fri 9am to 6 pm</p>
+                            <p>du lundi au vendredi du 8:00 a 18:00</p>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-envelope"></i>
-                            <h6><a href="#">support@colorlib.com</a></h6>
-                            <p>Send us your query anytime!</p>
+                            <h6><a href="http://www.ensas.uca.ma/">Ensas</a></h6>
+                            <p>poser votre question!</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
-                        novalidate="novalidate">
+                    <form class="row contact_form" asp-action="contact_process" method="post" id="contactForm"
+                          novalidate="novalidate">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -182,7 +164,6 @@
         </div>
     </section>
     <!--================Contact Area =================-->
-
     <!--================ start footer Area  =================-->
     <footer class="footer-area section_gap">
         <div class="container">
@@ -228,9 +209,9 @@
                     <p>You can trust us. we only send promo offers,</p>
                     <div class="form-wrap" id="mc_embed_signup">
                         <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                            method="get" class="form-inline">
+                              method="get" class="form-inline">
                             <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+                                   onblur="this.placeholder = 'Your Email Address '" required="" type="email">
                             <button class="click-btn btn btn-default">
                                 <span>subscribe</span>
                             </button>
@@ -244,9 +225,11 @@
                 </div>
             </div>
             <div class="row footer-bottom d-flex justify-content-between">
-                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2018 All rights reserved | This
+                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+                    Copyright © 2018 All rights reserved | This
                     template is
-                    made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a></p>
+                    made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a>
+                </p>
                 <div class="col-lg-4 col-sm-12 footer-social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -257,7 +240,6 @@
         </div>
     </footer>
     <!--================ End footer Area  =================-->
-
     <!--================Contact Success and Error message Area =================-->
     <div id="success" class="modal modal-message fade" role="dialog">
         <div class="modal-dialog">
@@ -289,10 +271,6 @@
         </div>
     </div>
     <!--================End Contact Success and Error message Area =================-->
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="~/js/jquery-3.2.1.min.js"></script>

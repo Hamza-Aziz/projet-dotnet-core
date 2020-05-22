@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Desktop\\projet c# concours\\projet\\projet.csproj": {}
+    "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Desktop\\projet c# concours\\projet\\projet.csproj": {
+    "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\projet c# concours\\projet\\projet.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj",
         "projectName": "projet",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\projet c# concours\\projet\\projet.csproj",
+        "projectPath": "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\projet c# concours\\projet\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -102,7 +102,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.1.9, )"
+              "version": "[2.1.10, )"
             }
           },
           "imports": [
