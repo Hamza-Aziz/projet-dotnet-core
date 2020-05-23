@@ -13,9 +13,11 @@ using NPOI.XSSF.UserModel;
 using Microsoft.EntityFrameworkCore;
 using projet.Models;
 using projet.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace projet.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class AdminsController : Controller
     {
         private readonly PrjContext _context;
@@ -404,6 +406,12 @@ namespace projet.Controllers
         private bool AdminExists(int id)
         {
             return _context.Admins.Any(e => e.Id == id);
+        }
+        public async Task<IActionResult> Logout(int id)
+        {
+            Response.Cookies.Delete("jwttoken");
+            return RedirectToAction("Index", "Home");
+
         }
     }
 }

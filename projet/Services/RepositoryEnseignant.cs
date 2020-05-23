@@ -14,6 +14,10 @@ namespace projet.Services
         void UpdateEns(Enseignant enseignant);
         IEnumerable<Enseignant> FindAllEns();
         Enseignant GetEnsbyID(int id);
+         string GenerateJSONWebTokenEnseignant(Enseignant claimedEnseignant);
+         string GenerateJSONWebTokenAdmin(Admin claimedAdmin);
+
+
 
 
     }

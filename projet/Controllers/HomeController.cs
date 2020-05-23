@@ -17,21 +17,24 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using projet.Models;
+using projet.Services;
+
 namespace projet.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IConfiguration _config;
+        private RepositoryEnseignant _enseignantReppsitory;
         private PrjContext _context;
         int numberOfchapter;
         List<ExpandoObject> lastUploadedChapter = new List<ExpandoObject>();
         List<ExpandoObject> chapitreFound = new List<ExpandoObject>();
         List<ExpandoObject> filierePrNiveau = new List<ExpandoObject>();
         IQueryable<string> moduleInDataBase;
-        public HomeController(PrjContext context, IConfiguration config)
+       
+        public HomeController(PrjContext context, RepositoryEnseignant enseignantReppsitory)
         {
-            _config = config;
-            _context = context;
+            _enseignantReppsitory = enseignantReppsitory;
+             _context = context;
             numberOfchapter = _context.chapitres.ToList().Count();
             //i should do a join of 3 table and passe the attribut nedded to a list and passe it to the view Index
             //moduleInDataBase = from m in _context.Modules orderby m.nom_mod select m.nom_mod;
@@ -325,11 +328,14 @@ namespace projet.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> LoginAdminProcessed([Bind("username,mdp")] Admin claimedAdmin)
+        public IActionResult LoginAdminProcessed([Bind("username,mdp")] Admin claimedAdmin)
         {
-            Admin admin = await _context.Admins.Where(x => x.username == claimedAdmin.username && x.mdp == claimedAdmin.mdp).FirstOrDefaultAsync();
-            if (admin != null)
+            var jwtToken = _enseignantReppsitory.GenerateJSONWebTokenAdmin(claimedAdmin);
+            if (jwtToken != null)
             {
+                CookieOptions option = new CookieOptions();
+                option.HttpOnly = true;
+                Response.Cookies.Append("jwttoken", jwtToken);
                 return RedirectToAction("Index", "Admins");
             }
             else
@@ -342,10 +348,10 @@ namespace projet.Controllers
         }
         
         [HttpPost]
-        public async Task<IActionResult> LoginEnseignantProcessed([Bind("email,mdp")] Enseignant claimedEnseignant)
+        public IActionResult LoginEnseignantProcessed([Bind("email,mdp")] Enseignant claimedEnseignant)
         {
 
-            var jwtToken = await GenerateJSONWebToken(claimedEnseignant);
+            var jwtToken = _enseignantReppsitory.GenerateJSONWebTokenEnseignant(claimedEnseignant);
             if (jwtToken!= null)
             {
                 /* HttpContext.Session.SetString("nom", enseignant.nom +" "+ enseignant.prenom);
@@ -364,39 +370,7 @@ namespace projet.Controllers
         }
 
 
-        private async Task<string> GenerateJSONWebToken(Enseignant claimedEnseignant)
-        {
-            Enseignant enseignant = await _context.Enseignants.Where(x => x.email == claimedEnseignant.email && x.mdp == claimedEnseignant.mdp).FirstOrDefaultAsync();
-            if (enseignant == null)
-            {
-                return null;
-            }
-         
-            var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var expiryDuration = int.Parse(_config["Jwt:ExpiryDuration"]);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Issuer = null,
-                Audience = null,
-                IssuedAt = DateTime.UtcNow,
-                NotBefore = DateTime.UtcNow,
-                Expires = DateTime.UtcNow.AddMinutes(expiryDuration),
-                Subject = new System.Security.Claims.ClaimsIdentity(new List<Claim> {
-                    new Claim("userId",enseignant.Id.ToString()),
-                    new Claim("nom",enseignant.nom.ToString()),
-                    new Claim("prenom",enseignant.prenom.ToString()),
-                    new Claim("email",enseignant.email.ToString()),
-                    new Claim("roles",enseignant.role.ToString()),
-
-                }),
-                SigningCredentials = new SigningCredentials(signInKey, SecurityAlgorithms.HmacSha256)
-
-            };
-            var jwtTokenHandler = new JwtSecurityTokenHandler();
-            var jwtToken = jwtTokenHandler.CreateJwtSecurityToken(tokenDescriptor);
-            var token = jwtTokenHandler.WriteToken(jwtToken);
-            return token;
-        }
+      
 
     }
 }

@@ -184,7 +184,7 @@ namespace projet.Controllers
           
             ViewBag.nom = currentUserLastName;
             ViewBag.prenom = currentUserFirstName;
-            ViewBag.email = currentUserEmail;
+         
             return View(mode);
         }
 

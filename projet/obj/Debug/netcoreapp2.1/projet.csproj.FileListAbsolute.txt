@@ -65,9 +65,14 @@ C:\Users\lenovo\Desktop\merge projet core\projet-dotnet-core\projet\obj\Debug\ne
 C:\Users\lenovo\Desktop\merge projet core\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.genruntimeconfig.cache
 C:\Users\lenovo\Desktop\merge projet core\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
 C:\Users\lenovo\Desktop\merge projet core\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
+E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
+E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
+E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
+E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
+E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\appsettings.Development.json
-E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\appsettings.json
+E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.deps.json
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.json
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.runtimeconfig.dev.json
@@ -75,12 +80,6 @@ E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netco
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.pdb
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
-E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
-E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
-E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
-E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
-E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfoInputs.cache
-E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.AssemblyInfo.cs
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.input.cache
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.TagHelpers.output.cache
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorCoreGenerate.cache
@@ -132,3 +131,4 @@ E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netco
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.pdb
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.genruntimeconfig.cache
 E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+E:\ASP .NET CORE TRAINING\Login-Projet\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
