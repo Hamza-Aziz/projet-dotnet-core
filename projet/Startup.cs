@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.IdentityModel.Tokens;
 using projet.Models;
 using projet.Services;
 
@@ -48,7 +51,22 @@ namespace projet
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddScoped<RepositoryModule, ModuleService>();
-
+            /*Add jwt auth*/
+            System.Diagnostics.Debug.WriteLine(Configuration["Jwt:Key"]);
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x =>
+            {
+                var signingKey = Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]);
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(signingKey),
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Issuer"],
+                };
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -70,12 +88,27 @@ namespace projet
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseSession();
+            app.Use(async (context, next) => {
+                var jwtToken = context.Request.Cookies["jwttoken"];
+                if (!string.IsNullOrEmpty(jwtToken))
+                {
+                    context.Request.Headers.Add("Authorization", "Bearer " + jwtToken);
+                    System.Diagnostics.Debug.WriteLine(context.Request.Headers.ToString());
+                    System.Diagnostics.Debug.WriteLine(context.Request.Headers.ToString());
+                    System.Diagnostics.Debug.WriteLine("Middlware  :  " + context.Request.Headers["Authorization"]);
+                }
+                await next();
+            });
+            app.UseAuthentication();
+            
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

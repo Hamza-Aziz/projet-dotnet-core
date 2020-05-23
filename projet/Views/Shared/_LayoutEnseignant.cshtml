@@ -51,12 +51,15 @@
                 <a class="nav-link" href="@Url.Action("Index1", "Module")">
                     <i class="fas fa-user-circle"></i>
                     <span>@ViewBag.nom</span>
+                    <br>
+                    
+                    <span style="padding-left:20px;">@ViewBag.prenom</span>
                 </a>
             </li>
-                <!-- Divider -->
-                <hr class="sidebar-divider my-0">
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
 
-                <!-- Nav Item - Dashboard -->
+            <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="@Url.Action("Index1", "Modules")">
                     <i class="fas fa-fw fa-tachometer-alt"></i>

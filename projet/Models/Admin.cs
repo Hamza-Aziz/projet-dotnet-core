@@ -23,5 +23,7 @@ namespace projet.Models
         public string email { get; set; }
         [Required]
         public string photo { get; set; }
+        public string role { get; set; }
+
     }
 }

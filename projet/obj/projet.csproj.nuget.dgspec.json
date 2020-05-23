@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj": {}
+    "E:\\ASP .NET CORE TRAINING\\Login-Projet\\projet-dotnet-core\\projet\\projet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj": {
+    "E:\\ASP .NET CORE TRAINING\\Login-Projet\\projet-dotnet-core\\projet\\projet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj",
+        "projectUniqueName": "E:\\ASP .NET CORE TRAINING\\Login-Projet\\projet-dotnet-core\\projet\\projet.csproj",
         "projectName": "projet",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\projet.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\merge projet core\\projet-dotnet-core\\projet\\obj\\",
+        "projectPath": "E:\\ASP .NET CORE TRAINING\\Login-Projet\\projet-dotnet-core\\projet\\projet.csproj",
+        "packagesPath": "C:\\Users\\youss\\.nuget\\packages\\",
+        "outputPath": "E:\\ASP .NET CORE TRAINING\\Login-Projet\\projet-dotnet-core\\projet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\youss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +13,7 @@ using projet.Services;
 
 namespace projet.Controllers
 {
+    [Authorize(Roles = "enseignant")]
     public class ModulesController : Controller
     {
         private readonly PrjContext _context;
@@ -173,10 +175,16 @@ namespace projet.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index1));
         }
+        
         public IActionResult Index1()
         {
             var mode = s1.FindAllMod();
-            ViewBag.nom = HttpContext.Session.GetString("nom");
+            var currentUserLastName = HttpContext.User.Claims.Where(x => x.Type == "nom").SingleOrDefault();
+            var currentUserFirstName = HttpContext.User.Claims.Where(x => x.Type == "prenom").SingleOrDefault();
+          
+            ViewBag.nom = currentUserLastName;
+            ViewBag.prenom = currentUserFirstName;
+            ViewBag.email = currentUserEmail;
             return View(mode);
         }
 

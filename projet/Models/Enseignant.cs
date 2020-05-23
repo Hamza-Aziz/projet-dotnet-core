@@ -31,5 +31,6 @@ namespace projet.Models
         public string photo { get; set; }
 
         public virtual ICollection<Module> Modules { get; set; }
+        public string role { get; set; }
     }
 }
