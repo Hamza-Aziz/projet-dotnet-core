@@ -42,6 +42,9 @@ namespace projet
             services.AddDbContext<PrjContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionStr")));
             
             services.AddDbContext<PrjContext>(options => options.UseInMemoryDatabase("PrjContext"));
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_0).AddJsonOptions(options => { //For Maintaining Json Format
+                options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+            });
             //services.AddTransient<IEtudiantService, EtudiantServiceImpl>();
             services.AddSession();
             services.Configure<CookiePolicyOptions>(options =>
