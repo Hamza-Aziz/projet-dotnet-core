@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
@@ -25,6 +27,7 @@ namespace projet
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -42,7 +45,7 @@ namespace projet
             services.AddDbContext<PrjContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionStr")));
             
             services.AddDbContext<PrjContext>(options => options.UseInMemoryDatabase("PrjContext"));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_0).AddJsonOptions(options => { //For Maintaining Json Format
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_0).AddJsonOptions(options => { // For Maintaining Json Format
                 options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
             });
             //services.AddTransient<IEtudiantService, EtudiantServiceImpl>();
