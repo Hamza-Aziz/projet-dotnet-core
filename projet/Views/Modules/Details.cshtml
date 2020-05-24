@@ -1,0 +1,59 @@
+﻿@model projet.Models.Module
+
+@{
+    Layout = "~/Views/Shared/_LayoutEnseignant.cshtml";
+
+    ViewData["Title"] = "Details";
+}
+
+<center>
+    <h2>Les informations des modules </h2>
+    <div>
+
+        <hr />
+        <table class="table table-bordered table-active">
+
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.id_mod)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.id_mod)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.nom_mod)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.nom_mod)
+                </td>
+            </tr>
+            
+
+        </table>
+    </div>
+    <p>
+        @Html.ActionLink("Back to List", "Index1")
+    </p>
+
+
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

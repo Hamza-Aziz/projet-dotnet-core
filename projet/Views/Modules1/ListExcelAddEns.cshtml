@@ -1,0 +1,96 @@
+﻿@model IEnumerable<projet.Models.Module>
+@{
+    Layout = "_LayoutAdmin";
+
+}
+<tbody>
+    <style>
+
+        .notice {
+            padding: 15px;
+            background-color: #fafafa;
+            border-left: 6px solid #7f7f84;
+            margin-bottom: 10px;
+            -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+        }
+
+        .notice-sm {
+            padding: 10px;
+            font-size: 80%;
+        }
+
+        .notice-lg {
+            padding: 35px;
+            font-size: large;
+        }
+
+        .notice-success {
+            border-color: #80D651;
+        }
+
+            .notice-success > strong {
+                color: #80D651;
+            }
+
+        .notice-info {
+            border-color: #45ABCD;
+        }
+
+            .notice-info > strong {
+                color: #45ABCD;
+            }
+
+        .notice-warning {
+            border-color: #FEAF20;
+        }
+
+            .notice-warning > strong {
+                color: #FEAF20;
+            }
+
+        .notice-danger {
+            border-color: #d73814;
+        }
+
+            .notice-danger > strong {
+                color: #d73814;
+            }
+        }
+    </style>
+
+
+
+    <section id="main-content">
+        <section class="wrapper">
+            <h3 class="bg-success"><i class="fa fa-list  "></i> @ViewBag.msg</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content-panel">
+                        <h4><i class="fa fa-list  "></i> The list of added Modules</h4>
+                        <hr>
+                        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+                        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+                        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+                       
+                        <!------ Include the above in your HEAD tag ---------->
+                        <div class="container">
+                            @foreach (var item in Model)
+                            {
+
+                            <div class="notice notice-success">
+                                Module    <strong>@Html.DisplayFor(modelItem => item.nom_mod)</strong>
+                            </div>
+
+                            }
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>

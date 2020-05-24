@@ -1,0 +1,415 @@
+﻿
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="~/img/favicon.png" type="image/png">
+    <title>Courses</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/vendors/linericon/style.css">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="~/vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="~/vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="~/css/style2.css">
+</head>
+
+<body>
+
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-6 col-4 header-top-left">
+                        <a href="tel:+9530123654896">
+                            <span class="lnr lnr-phone"></span>
+                            <span class="text">
+                                <span class="text">+953012 3654 896</span>
+                            </span>
+                        </a>
+                        <a href="mailto:Ensas">
+                            <span class="lnr lnr-envelope"></span>
+                            <span class="text">
+                                <span class="text">Ensas</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-8 header-top-right">
+                        <a href='@Url.Action("Index", "Admins")' class="text-uppercase">Administration</a>
+                        <a href='@Url.Action("Index", "Enseignants")' class="text-uppercase">Enseignants</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_menu">
+            <div class="search_input" id="search_input_box">
+                <div class="container">
+                    <form class="d-flex justify-content-between" method="" action="">
+                        <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+                        <button type="submit" class="btn"></button>
+                        <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+                    </form>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href='@Url.Action("Index", "Home")'><img src="~/img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" asp-action="Index">Home</a></li>
+                            <li class="nav-item"><div class="nav-link">@Html.ActionLink("About", "About", "Home")</div></li>
+                            <li class="nav-item"><div class="nav-link">@Html.ActionLink("Courses", "Courses", "Home")</div></li>
+                            <li class="nav-item"><div class="nav-link">@Html.ActionLink("Contact", "Contact", "Home")</div></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link search" id="search">
+                                    <i class="lnr lnr-magnifier"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================ End Header Menu Area =================-->
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                a
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2><i class="fa fa-book"></i> Courses</h2>
+                            <p>Bienvenu!!.</p>
+                            <div class="page_link">
+                                <a asp-action="Index">Home</a>
+                                <a asp-action="Courses">Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search_input" id="search_input_box">
+            <div class="container">
+                <form class="d-flex justify-content-between" asp-action="Courses" method="post">
+
+                    <select asp-items="@ViewBag.moduleInDataBase" name="moduleChoisis" id="moduleChoisis">
+                        @if ((ViewBag.moduleInDataBase as SelectList).Count() == 0)
+                        {
+                            <option value="">choisissez un niveau d'abords</option>
+                        }
+                        else
+                        {
+                            <option value="">filtrer par module</option>
+                        }
+                    </select>
+
+                    <input style="text-align:center" type="text" class="form-control" id="searchString" name="searchString" placeholder="Search Here">
+                    <button type="submit" class="genric-btn info-border circle" id="search" title="Search">gooo</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+    <!--=======================================================================debut resultat de recherche =============================================================-->
+    <div class="popular_courses lite_bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="main_title">
+                        <h2 style="text-align:center;color:deepskyblue"><i class="fa fa-book"></i> les cours disponibles seront affichées ici après le choix d'un niveau et d'une filière</h2>
+                        <p>@ViewBag.Found</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="row justify-content-center" style="margin-top:2em">
+                    <h2 style="text-align:center">@ViewBag.notFound</h2>
+                    @foreach (var item in ViewBag.chapitreFound)
+                    {
+
+
+                        <!-- single course -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single_course">
+                                <div class="course_head overlay">
+                                    <img class="img-fluid w-100" src="~/./img/courses/trainer1.jpg" alt="">
+                                    <div class="authr_meta">
+                                        <img src="~/UploadImages/@item.photoOfensignant" width="100" height="100" alt="">
+                                        <span>publié par  <br /> Mr.</span> <span style="color:lightskyblue"> @item.enseignatOfmodule </span>
+                                    </div>
+                                </div>
+                                <div class="course_content">
+                                    <h4>
+                                        <a asp-action="CoursesDetail" asp-route-id="@item.idChapter">@item.nameOfchapter</a>
+                                    </h4>
+                                    <p>
+                                        ce chapitre est publié dans le module @item.nameOfModule
+                                    </p>
+                                    <div class="course_meta d-flex justify-content-between">
+                                        <div>
+                                            <span class="meta_info">
+                                                <a href="#"><i class="lnr lnr-user"></i>355</a>
+                                            </span>
+                                            <span class="meta_info">
+                                                <a href="#">
+                                                    <i class="lnr lnr-bubble"></i>35
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <a asp-action="Download" asp-route-fileName="@item.nameOfchapter" class="genric-btn info circle">télécharger</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                </div>
+            </div>
+        </div>
+
+                <!---================================================fin resultat de rechercher =================================================================================================-->
+                <!-------------------------------==================================debut cours dispo================================-->
+                <!----------------===============================================fin cours dispo=====================================================================================-->
+                <!---==================================================cours disponible============================================================================================================-->
+                <h3 style="text-align:center;color:deepskyblue"><i class="fa fa-book"></i> Vous trouvrez ci-dessous les filières disponibles organisées par filière et par niveau</h3>
+                <h5 style="text-align:center;color:gray"><i class="fa fa-lightbulb"></i> les filières qui ne contient aucun niveau ne vont étre pas affichées</h5>
+                <div class="row justify-content-center" style="margin-top:2em">
+                    <div id="accordion">
+
+                        @foreach (var filiereItem in ViewBag.filierePrNiveau)
+                        {
+                            <div class="card">
+                                <div class="card-header" id="@filiereItem.filiere.nom_fil+">
+                                    <h5 class="mb-0" style="text-align:center">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#@filiereItem.filiere.nom_fil" aria-expanded="false" aria-controls="@filiereItem.filiere.nom_fil">
+                                            <i class="fa fa-plus"></i>&nbsp; @filiereItem.filiere.nom_fil
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="@filiereItem.filiere.nom_fil" class="collapse" aria-labelledby="@filiereItem.filiere.nom_fil" data-parent="#@filiereItem.filiere.nom_fil">
+                                    @foreach (var niveau in filiereItem.niveaux)
+                                    {
+                                        <div class="card">
+                                            <div class="card-header" id="@filiereItem.filiere.nom_fil@niveau.nom_niv+">
+                                                <h5 class="mb-0" style="text-align:center">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#@filiereItem.filiere.nom_fil@niveau.nom_niv" aria-expanded="false" aria-controls="@filiereItem.filiere.nom_fil@niveau.nom_niv">
+                                                        <i class="fa fa-child"></i>&nbsp; @niveau.nom_niv
+                                                    </button>
+                                                </h5>
+                                            </div>
+
+                                            <div id="@filiereItem.filiere.nom_fil@niveau.nom_niv" class="collapse" aria-labelledby="@filiereItem.filiere.nom_fil@niveau.nom_niv" data-parent="#@filiereItem.filiere.nom_fil@niveau.nom_niv">
+                                                <div class="card-body">
+                                                    <form asp-action="getCourses">
+                                                        <button class="genric-btn info-border circle" asp-action="getCourses" asp-controller="Home" asp-route-idNiveau="@niveau.id_niv" asp-route-idFiliere="@filiereItem.filiere.id_fil">afficher les cours disponibles</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+
+
+
+                <!--================End resultat de recherche =================-->
+                <!--================ Start les derniers cours publiés Area =================-->
+                <div class="popular_courses lite_bg">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="main_title">
+                                    <h2 style="text-align:center;color:deepskyblue"><i class="fa fa-book"></i> les derniers cours publiés</h2>
+                                    <p>vous trouvrez ci-dessous les derniers cours publiés par vos ensignants.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            @foreach (var item in ViewBag.lastUploadedChapter)
+                            {
+
+
+                                <!-- single course -->
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="single_course">
+                                        <div class="course_head overlay">
+                                            <img class="img-fluid w-100" src="~/./img/courses/trainer1.jpg" alt="">
+                                            <div class="authr_meta">
+                                                <img src="~/UploadImages/@item.photoOfensignant" width="100" height="100" alt="">
+                                                <span>publié par <br /><i class="fas fa-chalkboard-teacher"></i> Mr. <span style="color:lightskyblue"> @item.enseignatOfmodule </span>
+                                            </div>
+                                        </div>
+                                        <div class="course_content">
+                                            <h4>
+                                                <a asp-action="CoursesDetail" asp-route-id="@item.idChapter"><i class="fa fa-book"></i> @item.nameOfchapter</a>
+                                            </h4>
+                                            <p>
+                                                ce chapitre est publié dans le module @item.nameOfModule
+                                            </p>
+                                            <div class="course_meta d-flex justify-content-between">
+                                                <div>
+                                                    <span class="meta_info">
+                                                        <a href="#"><i class="lnr lnr-user"></i>355</a>
+                                                    </span>
+                                                    <span class="meta_info">
+                                                        <a href="#">
+                                                            <i class="lnr lnr-bubble"></i>35
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <a asp-action="Download" asp-route-fileName="@item.nameOfchapter" class="genric-btn info circle">télécharger</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <!--================ End les derniers cours publiés Area =================-->
+                <!--================ Start footer Area  =================-->
+                <footer class="footer-area section_gap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6 single-footer-widget">
+                                <h4>Top Products</h4>
+                                <ul>
+                                    <li><a href="#">Managed Website</a></li>
+                                    <li><a href="#">Manage Reputation</a></li>
+                                    <li><a href="#">Power Tools</a></li>
+                                    <li><a href="#">Marketing Service</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-6 single-footer-widget">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">Brand Assets</a></li>
+                                    <li><a href="#">Investor Relations</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-6 single-footer-widget">
+                                <h4>Features</h4>
+                                <ul>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">Brand Assets</a></li>
+                                    <li><a href="#">Investor Relations</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-6 single-footer-widget">
+                                <h4>Resources</h4>
+                                <ul>
+                                    <li><a href="#">Guides</a></li>
+                                    <li><a href="#">Research</a></li>
+                                    <li><a href="#">Experts</a></li>
+                                    <li><a href="#">Agencies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 single-footer-widget">
+                                <h4>Newsletter</h4>
+                                <p>You can trust us. we only send promo offers,</p>
+                                <div class="form-wrap" id="mc_embed_signup">
+                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                          method="get" class="form-inline">
+                                        <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+                                               onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+                                        <button class="click-btn btn btn-default">
+                                            <span>subscribe</span>
+                                        </button>
+                                        <div style="position: absolute; left: -5000px;">
+                                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                        </div>
+
+                                        <div class="info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer-bottom d-flex justify-content-between">
+                            <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+                                Copyright © 2018 All rights reserved | This
+                                template is
+                                made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a>
+                            </p>
+                            <div class="col-lg-4 col-sm-12 footer-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!--================ End footer Area  =================-->
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="~/js/jquery-3.2.1.min.js"></script>
+                <script src="~/js/popper.js"></script>
+                <script src="~/js/bootstrap.min.js"></script>
+                <script src="~/js/stellar.js"></script>
+                <script src="~/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+                <script src="~/vendors/owl-carousel/owl.carousel.min.js"></script>
+                <script src="~/js/owl-carousel-thumb.min.js"></script>
+                <script src="~/js/jquery.ajaxchimp.min.js"></script>
+                <script src="~/vendors/counter-up/jquery.counterup.js"></script>
+                <script src="~/js/mail-script.js"></script>
+                <!--gmaps Js-->
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+                <script src="~/js/gmaps.min.js"></script>
+                <script src="~/js/theme.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        // Add minus icon for collapse element which is open by default
+                        $(".collapse.show").each(function () {
+                            $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+                        });
+
+                        // Toggle plus minus icon on show hide of collapse element
+                        $(".collapse").on('show.bs.collapse', function () {
+                            $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+                        }).on('hide.bs.collapse', function () {
+                            $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+                        });
+                    });
+                </script>
+</body>
+
+</html>
