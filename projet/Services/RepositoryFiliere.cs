@@ -13,8 +13,13 @@ namespace projet.Services
         void Updatefil(Filiere fil);
         IEnumerable<Filiere> FindAllfil();
 
-        IEnumerable<niveau> FindAllniv();
         Filiere GetfilbyID(int id);
         void Saveniv(niveau niv);
+        IEnumerable<niveau> FindAllniv(int id);
+
+        niveau GetnivbyID(int id);
+        void Deleteniv(int id);
+
+        void Updateniv(niveau niv);
     }
 }

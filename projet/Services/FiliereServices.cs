@@ -52,9 +52,20 @@ namespace projet.Services
         }
 
 
-        public IEnumerable<niveau> FindAllniv()
+        public IEnumerable<niveau> FindAllniv(int id)
         {
-            return _context.Niveaus.ToList();
+            List<niveau>niv = _context.Niveaus.ToList();
+            List<niveau> nivv = new List<niveau>();
+
+            foreach(var item in niv)
+            {
+                if (item.id_fil == id)
+                {
+                    nivv.Add(item);
+                }
+            }
+
+            return nivv;
         }
 
         public Filiere GetfilbyID(int id)
@@ -65,6 +76,25 @@ namespace projet.Services
         public void Saveniv(niveau niv)
         {
             _context.Add(niv);
+            _context.SaveChanges();
+        }
+
+
+        public niveau GetnivbyID(int id)
+        {
+            return _context.Niveaus.Find(id);
+        }
+        public void Deleteniv(int id)
+        {
+            var niv = _context.Niveaus.Find(id);
+            _context.Niveaus.Remove(niv);
+            _context.SaveChanges();
+        }
+
+        public void Updateniv(niveau niv)
+        {
+
+            _context.Update(niv);
             _context.SaveChanges();
         }
 

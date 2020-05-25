@@ -476,6 +476,8 @@ namespace projet.Controllers
             return RedirectToAction("Listf");
         }
 
+        //------------------------------operation niveaux-----------------------------------------
+
         //Add niveaux
         public IActionResult Createniv()
         {
@@ -512,6 +514,52 @@ namespace projet.Controllers
         {
             return RedirectToAction("Index", "Home");
         }
+
+        //list niveaux d'une filière
+
+         public IActionResult Listniv(int id_fil)
+        {
+
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+
+            return View(repof.FindAllniv(id_fil));
+        }
+
+
+        //update niveaux
+
+
+        public IActionResult Editniv(int Id)
+        {
+            var niv= repof.GetnivbyID(Id);
+            return View(niv);
+
+        }
+
+
+        [HttpPost]
+        public IActionResult Editniveau(int id_niv,String nom_niv)
+        {
+            niveau niv = repof.GetnivbyID(id_niv);
+            niv.nom_niv = nom_niv;
+            repof.Updateniv(niv);
+            int id_fil = Convert.ToInt32(niv.id_fil);
+            return RedirectToAction("Listniv", new { id_fil = id_fil });
+        }
+
+        //delete niveaux
+
+         public IActionResult Deleteniv(int Id)
+        {
+            niveau n = repof.GetnivbyID(Id);
+            int id_fil = Convert.ToInt32(n.id_fil);
+            repof.Deleteniv(Id);
+            return RedirectToAction("Listniv", new { id_fil = id_fil });
+         }
+
+
+
+
 
     }
 }

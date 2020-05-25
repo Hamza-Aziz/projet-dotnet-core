@@ -216,3 +216,5 @@ C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Raz
 C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Createniv.cshtml.g.cs
 C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Listf.cshtml.g.cs
 C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Editfil.cshtml.g.cs
+C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Listniv.cshtml.g.cs
+C:\Users\hafsa web\Desktop\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Editniv.cshtml.g.cs
