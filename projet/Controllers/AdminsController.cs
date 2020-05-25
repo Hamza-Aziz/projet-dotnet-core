@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using projet.Models;
 using projet.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace projet.Controllers
 {
@@ -25,16 +26,19 @@ namespace projet.Controllers
         private List<Enseignant> listEns = new List<Enseignant>();
 
         private RepositoryEnseignant  repo;
-        public AdminsController(RepositoryEnseignant rep, IHostingEnvironment hostingEnvironment)
+        private RepositoryFiliere repof;
+        public AdminsController(RepositoryFiliere f, RepositoryEnseignant rep, IHostingEnvironment hostingEnvironment)
         {
             repo = rep;
             _hostingEnvironment = hostingEnvironment;
+            repof = f;
         }
 
-        /*************************************************operation by Admin*******************************************************/
 
-        //page import excel file
-        public IActionResult ImportExcelAddEns()
+            /*************************************************operation by Admin*******************************************************/
+
+            //page import excel file
+            public IActionResult ImportExcelAddEns()
         {
             return View();
         }
@@ -413,5 +417,152 @@ namespace projet.Controllers
             return RedirectToAction("Index", "Home");
 
         }
+
+
+
+        /*************************************************operation Filiere*******************************************************/
+        //Add filiere
+        public IActionResult Addfiliere()
+        {
+            return View();
+        }
+
+        public IActionResult Createfil(String nomfil)
+        {
+
+            if (nomfil == null)
+            {
+                ViewBag.msg = "le champ nom de filière est vide";
+            }
+            else
+            {
+                Filiere f = new Filiere();
+                f.nom_fil = nomfil;
+                repof.Savefil(f);
+                ViewBag.msg = "Insertion de filière avec succés";
+            }
+
+            return View(nameof(Addfiliere));
+        }
+
+        //List des filières
+
+        public IActionResult Listf()
+        {
+
+            ViewBag.msg = "si vous supprimez une filière, ses niveaux seront aussi supprimés";
+            return View(repof.FindAllfil());
+        }
+
+        //Delete filière
+        public IActionResult Deletefil(int Id)
+        {
+            repof.Deletefil(Id);
+            return RedirectToAction("Listf");
+        }
+
+
+        //Update Filière 
+
+        public IActionResult Editfil(int Id)
+        {
+            var fil = repof.GetfilbyID(Id);
+            return View(fil);
+
+        }
+
+        //Update filiere Action
+
+
+
+
+
+        [HttpPost]
+        public IActionResult Editfiliere(int id_fil, [Bind("id_fil,nom_fil")] Filiere fil)
+        {
+            repof.Updatefil(fil);
+            return RedirectToAction("Listf");
+        }
+
+        //------------------------------operation niveaux-----------------------------------------
+
+        //Add niveaux
+        public IActionResult Createniv()
+        {
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+            return View();
+        }
+
+        public IActionResult Createniveau(String niveau, int id_fil)
+        {
+
+
+            if (niveau == null)
+            {
+                ViewBag.msg = "Veillez remplir tous les champs";
+            }
+            else
+            {
+
+                niveau niv = new niveau();
+                niv.nom_niv = niveau;
+                niv.id_fil = id_fil;
+                repof.Saveniv(niv);
+                ViewBag.msg = "Insertion avec succes";
+            }
+
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+
+            return View(nameof(Createniv));
+        }
+
+
+
+        //list niveaux d'une filière
+
+        public IActionResult Listniv(int id_fil)
+        {
+
+            ViewBag.f = new SelectList(repof.FindAllfil(), "id_fil", "nom_fil");
+
+            return View(repof.FindAllniv(id_fil));
+        }
+
+
+        //update niveaux
+
+
+        public IActionResult Editniv(int Id)
+        {
+            var niv = repof.GetnivbyID(Id);
+            return View(niv);
+
+        }
+
+
+        [HttpPost]
+        public IActionResult Editniveau(int id_niv, String nom_niv)
+        {
+            niveau niv = repof.GetnivbyID(id_niv);
+            niv.nom_niv = nom_niv;
+            repof.Updateniv(niv);
+            int id_fil = Convert.ToInt32(niv.id_fil);
+            return RedirectToAction("Listniv", new { id_fil = id_fil });
+        }
+
+        //delete niveaux
+
+        public IActionResult Deleteniv(int Id)
+        {
+            niveau n = repof.GetnivbyID(Id);
+            int id_fil = Convert.ToInt32(n.id_fil);
+            repof.Deleteniv(Id);
+            return RedirectToAction("Listniv", new { id_fil = id_fil });
+        }
+
+
+
+
+
     }
 }

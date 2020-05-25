@@ -1,0 +1,93 @@
+﻿
+@model IEnumerable<projet.Models.niveau>
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--external css-->
+<link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="~/css/style.css" rel="stylesheet">
+<link href="~/css/style-responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="~/css/to-do.css">
+
+<br />
+<br />
+<section id="main-content">
+    <br />
+
+    <br />
+    <div class="row mt">
+        <div class="col-md-12">
+            <section class="task-panel tasks-widget">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h5><i class="fa fa-tasks"></i> Modify Or Delete Niveau</h5>
+                    </div>
+
+                    <br>
+                </div>
+                <div class="panel-body">
+                    <div class="task-content">
+                        <form method="post" enctype="multipart/form-data" asp-action="Listniv">
+
+                            <div class="form-group has-feedback">
+                                <label class="col-lg-2 control-label">Veuillez choisir une Filière</label>
+                                <div class="col-lg-10">
+                                    @Html.DropDownList("id_fil", ViewBag.f as SelectList, htmlAttributes: new { @class = "form-control" })
+
+
+                                    <br />
+                                    <button class="btn btn-theme " id="btnUpload" style="background-color:#00FFFF;margin-left:300px; " type="submit">Afficher les niveaux </button>
+
+
+
+                                </div>
+                            </div>
+
+
+                        </form>
+
+
+
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.nom_niv)
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.nom_niv)
+                                        </td>
+
+
+                                        <td>
+
+                                            <button class="btn btn-primary btn-xs"><a asp-action="Editniv" asp-route-id="@item.id_niv"><i class="fa fa-pencil bg-primary"></i> </a></button>
+                                            <button class="btn btn-danger btn-xs"> <a asp-action="Deleteniv" asp-route-id="@item.id_niv"><i class="fa fa-trash-o  bg-primary"></i></a></button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+</section>
+

@@ -57,6 +57,7 @@ namespace projet
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddScoped<RepositoryModule, ModuleService>();
+            services.AddScoped<RepositoryFiliere, FiliereServices>();
             /*Add jwt auth*/
             System.Diagnostics.Debug.WriteLine(Configuration["Jwt:Key"]);
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x =>
