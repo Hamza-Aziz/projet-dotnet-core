@@ -19,16 +19,19 @@ namespace projet.Controllers
         private readonly PrjContext _context;
 
         private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly int id;
         private List<Module> listMod = new List<Module>();
 
         private RepositoryModule s1;
         private RepositoryEnseignant s2;
 
-        public ModulesController(IHostingEnvironment hostingEnvironment, RepositoryModule s1, RepositoryEnseignant s2)
+        public ModulesController(IHostingEnvironment hostingEnvironment, PrjContext _context, RepositoryModule s1, RepositoryEnseignant s2)
         {
             _hostingEnvironment = hostingEnvironment;
             this.s1 = s1;
             this.s2 = s2;
+            this._context = _context;
+
         }
         public IActionResult Details(int id)
         {
@@ -178,10 +181,22 @@ namespace projet.Controllers
         
         public IActionResult Index1()
         {
-            var mode = s1.FindAllMod();
+
+            
             var currentUserLastName = HttpContext.User.Claims.Where(x => x.Type == "nom").SingleOrDefault();
             var currentUserFirstName = HttpContext.User.Claims.Where(x => x.Type == "prenom").SingleOrDefault();
-          
+
+            int id2=0;
+            foreach(var j in _context.Enseignants.ToList())
+            {
+                if(j.email.Equals(HttpContext.Session.GetString("email")) && j.mdp.Equals(HttpContext.Session.GetString("pass")))
+                {
+                    id2 = j.Id;
+                }
+            }
+
+
+            var mode = s1.FindAllMod(id2);
             ViewBag.nom = currentUserLastName;
             ViewBag.prenom = currentUserFirstName;
          

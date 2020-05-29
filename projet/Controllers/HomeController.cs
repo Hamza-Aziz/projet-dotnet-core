@@ -355,8 +355,11 @@ namespace projet.Controllers
             if (jwtToken!= null)
             {
                 /* HttpContext.Session.SetString("nom", enseignant.nom +" "+ enseignant.prenom);
-                 HttpContext.Session.SetString("username", enseignant.username);
+                     HttpContext.Session.SetString("username", enseignant.username);
                  HttpContext.Session.SetInt32("id", enseignant.Id);*/
+                HttpContext.Session.SetString("email",claimedEnseignant.email);
+
+                HttpContext.Session.SetString("pass", claimedEnseignant.mdp);
                 CookieOptions option = new CookieOptions();
                 option.HttpOnly = true;
                 Response.Cookies.Append("jwttoken", jwtToken);

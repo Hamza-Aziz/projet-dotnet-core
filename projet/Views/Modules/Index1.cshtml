@@ -13,9 +13,7 @@
         <br /><br /><br /><br />
         <h2>   Liste des Modules  </h2>
         <br />  <br />
-        <button class="btn btn-success" style="margin-bottom:10px"><i class="fa fa-plus"></i>@Html.ActionLink("Add Module", "Add", "Modules")</button>
-        <button class="btn btn-success" style="margin-bottom:10px"><i class="fa fa-calendar"></i>@Html.ActionLink("Calendrier", "Calendrier", "Etudiant")</button>
-   
+        
         <center>
             <table class="table table-bordered table-hover table-striped">
                 <thead class="thead-dark">
@@ -39,29 +37,29 @@
                 </thead>
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.nom_mod)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.id_mod)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Enseignant.nom)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.niveau.nom_niv)
-                        </td>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nom_mod)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.id_mod)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Enseignant.nom)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.niveau.nom_niv)
+                    </td>
 
 
 
-                        <td>
-                            <button class="btn btn-warning" style="margin-left:5px"><i class="fas fa-info-circle"></i> @Html.ActionLink("Details", "Details", new { id = item.id_mod }) </button>
+                    <td>
+                        <button class="btn btn-warning" style="margin-left:5px"><i class="fas fa-info-circle"></i> @Html.ActionLink("Details", "Details", new { id = item.id_mod }) </button>
 
-                            <button class="btn btn-warning" style="margin-left:5px"><i class="fas fa-plus"></i> @Html.ActionLink("Ajouter un chapitre", "Create", "chapitres", new { id = item.id_mod }) </button>
+                        <button class="btn btn-warning" style="margin-left:5px"><i class="fas fa-plus"></i> @Html.ActionLink("Ajouter un chapitre", "Create", "chapitres", new { id = item.id_mod }) </button>
 
-                        </td>
-                    </tr>
+                    </td>
+                </tr>
                 }
             </table>
         </center>

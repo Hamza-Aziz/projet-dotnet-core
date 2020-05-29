@@ -13,7 +13,8 @@ namespace projet.Services
         void SaveMod(Module mod);
         void DeleteMod(int id);
         void UpdateMod(Module module);
-        IEnumerable<Module> FindAllMod();
+        //IQueryable<Module> FindAllMod(int id);
         Module GetModbyID(int id);
+        IEnumerable<Module> FindAllMod(int id);
     }
 }

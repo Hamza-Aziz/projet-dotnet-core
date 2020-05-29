@@ -23,9 +23,13 @@ namespace projet.Services
             _context.SaveChanges();
         }
 
-        public IEnumerable<Module> FindAllMod()
-        {
-            return _context.Modules.Include(e => e.Enseignant).Include(e => e.niveau);
+        public IEnumerable<Module> FindAllMod(int id)
+         {
+            // var appcon = _context.Enseignants.Include(e => e.Modules);
+            //return _context.Enseignants.Where(x => x.Id == id).SingleOrDefault().Modules;
+            return _context.Modules.Where(x => x.Id == id).Include(e => e.niveau).ToList();
+         
+            //return _context.Modules.Include(e => e.Enseignant).Include(e => e.niveau);
         }
 
         public Module GetModbyID(int id)
@@ -51,6 +55,19 @@ namespace projet.Services
             _context.SaveChanges();
         }
 
-        
+        /* public void FindAllMod(int id)
+         {
+            var cd= _context.Enseignants.Where(x => x.Id == id).SingleOrDefault().Modules;
+         }*/
+
+        /* public IEnumerable<Module> FindAllMod(object id)
+         {
+             throw new NotImplementedException();
+         }
+
+
+        IQueryable<Module> RepositoryModule.FindAllMod(int id) => _context.Modules.Where(x => x.Id == id);
+*/
+
     }
 }
