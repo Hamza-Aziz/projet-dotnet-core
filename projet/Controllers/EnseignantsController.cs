@@ -144,6 +144,12 @@ namespace projet.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Logout(int id)
+        {
+            Response.Cookies.Delete("jwttoken");
+            return RedirectToAction("Index", "Home");
+
+        }
         private bool EnseignantExists(int id)
         {
             return _context.Enseignants.Any(e => e.Id == id);

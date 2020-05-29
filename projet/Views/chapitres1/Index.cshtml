@@ -1,0 +1,64 @@
+﻿@model IEnumerable<projet.Models.chapitre>
+
+
+
+@{
+    ViewData["Title"] = "Index"; Layout = "~/Views/Shared/_LayoutEnseignant.cshtml";
+
+}
+
+<h2>Index</h2>
+
+<br />  <br />  
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contenu)
+            </th>
+            <th>
+            <th>
+                @Html.DisplayNameFor(model => model.date_depot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.responsable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Module)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.contenu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.date_depot)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.responsable)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Module.nom_mod)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_chap }, new { @class = "btn btn-primary btn-icon-split" })
+                    @Html.ActionLink("Details", "Details", new { id = item.id_chap }, new { @class = "btn btn-info btn-icon-split" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_chap }, new { @class = "btn btn-danger btn-icon-split" })
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

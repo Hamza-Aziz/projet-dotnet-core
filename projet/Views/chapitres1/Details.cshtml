@@ -1,0 +1,65 @@
+﻿@model projet.Models.chapitre
+
+@{ Layout = "~/Views/Shared/_LayoutEnseignant.cshtml";
+
+    ViewData["Title"] = "Details";
+}
+<!DOCTYPE html>
+<style>
+    .center-div {
+        margin: 0 auto;
+    }
+</style>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="center-div">
+        <div class="container">
+            <h1>ces informations concernant Ce chapitre</h1>
+            <br /><br />    <br />
+            <p> Numero du chapitre : @Html.DisplayFor(model => model.id_chap) </p>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Type du chapitre</td>
+                        <td>@Html.DisplayFor(model => model.type)</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Contenu du chapitre</td>
+                        <td>@Html.DisplayFor(model => model.contenu)</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>Date du depot</td>
+                        <td>@Html.DisplayFor(model => model.date_depot)</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Responsable du chapitre</td>
+                        <td>@Html.DisplayFor(model => model.responsable)</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Numero du module</td>
+                        <td>@Html.DisplayFor(model => model.id_mod)</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id_chap }) |
+        @Html.ActionLink("Back to List", "Liste")
+    </p>
+
+</body>
+</html>
+
+

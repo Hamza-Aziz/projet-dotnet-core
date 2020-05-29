@@ -66,7 +66,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href='@Url.Action("Index", "Home")'><img src="~/img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href='@Url.Action("Index", "Home")'><img src="~/img/logo.png" style="width:80px;height:80px;" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -95,9 +95,12 @@
         <div class="container-login100">
             <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
                 <form class="login100-form validate-form flex-sb flex-w" asp-controller="Home" asp-action="LoginEnseignantProcessed" method="post">
-                    <span class="login100-form-title p-b-32">
+                    <div class="login100-form-title text-sm-center ">
+                        <h3  style="color:cornflowerblue">
                         Espace des Enseignants
-                    </span>
+                            </h3>
+                    </div>
+                    <br /><br />
                     @if (ViewBag.error != null)
                     {
                         <div class="alert alert-danger" role="alert">
@@ -139,7 +142,7 @@
                         </div>
                     </div>
 
-                    <div class="container-login100-form-btn">
+                    <div class="container-login100-form-btn  m-l-110">
                         <button type="submit" class="login100-form-btn">
                             Login
                         </button>

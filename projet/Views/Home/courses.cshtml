@@ -66,7 +66,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href='@Url.Action("Index", "Home")'><img src="~/img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href='@Url.Action("Index", "Home")'><img src="~/img/logo.png" style="width:80px;height:80px;" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -155,7 +155,7 @@
 
 
                         <!-- single course -->
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" >
                             <div class="single_course">
                                 <div class="course_head overlay">
                                     <img class="img-fluid w-100" src="~/./img/courses/trainer1.jpg" alt="">
@@ -164,9 +164,9 @@
                                         <span>publié par  <br /> Mr.</span> <span style="color:lightskyblue"> @item.enseignatOfmodule </span>
                                     </div>
                                 </div>
-                                <div class="course_content">
+                                <div class="course_content " >
                                     <h4>
-                                        <a asp-action="CoursesDetail" asp-route-id="@item.idChapter">@item.nameOfchapter</a>
+                                        <a asp-action="CoursesDetail"  asp-route-id="@item.idChapter">@item.nameOfchapter</a>
                                     </h4>
                                     <p>
                                         ce chapitre est publié dans le module @item.nameOfModule
@@ -182,7 +182,7 @@
                                                 </a>
                                             </span>
                                         </div>
-                                        <div>
+                                        <div >
                                             <a asp-action="Download" asp-route-fileName="@item.nameOfchapter" class="genric-btn info circle">télécharger</a>
                                         </div>
                                     </div>
@@ -274,12 +274,14 @@
                                             </div>
                                         </div>
                                         <div class="course_content">
-                                            <h4>
-                                                <a asp-action="CoursesDetail" asp-route-id="@item.idChapter"><i class="fa fa-book"></i> @item.nameOfchapter</a>
-                                            </h4>
-                                            <p>
-                                                ce chapitre est publié dans le module @item.nameOfModule
-                                            </p>
+                                            <div   style="height:160px;width:300px">
+                                                <h4>
+                                                    <a asp-action="CoursesDetail" asp-route-id="@item.idChapter"><i class="fa fa-book"></i> @item.nameOfchapter</a>
+                                                </h4>
+                                                <p>
+                                                    ce chapitre est publié dans le module @item.nameOfModule
+                                                </p>
+                                            </div>
                                             <div class="course_meta d-flex justify-content-between">
                                                 <div>
                                                     <span class="meta_info">

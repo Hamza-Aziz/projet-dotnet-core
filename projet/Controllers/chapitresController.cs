@@ -55,6 +55,7 @@ namespace projet.Controllers
         public IActionResult Create()
         {
             //ViewData["id_mod"] = new SelectList(_context.Modules, "id_mod", "nom_mod");
+            ViewBag.id_mod = new SelectList(_context.Modules, "id_mod", "nom_mod");
             return View();
         }
         //[Bind("id_chap,type,contenu,date_depot,responsable,id_mod")] 
@@ -68,21 +69,25 @@ namespace projet.Controllers
             if (ModelState.IsValid)
             {
                 string uniqueFileName = UploadedFile(model);
+                //ViewData["id_mod"] = new SelectList(_context.Modules, "id_mod", "nom_mod");
 
                 chapitre chap = new chapitre
                 {
                     id_chap = model.id_chap,
                     type = model.type,
+
                     date_depot = model.date_depot,
                     responsable = model.responsable,
                     id_mod = model.id_mod,
-                    contenu = uniqueFileName,
 
+                contenu = uniqueFileName,
                 };
                 _context.Add(chap);
                 await _context.SaveChangesAsync();
+                ViewBag.id_mod = new SelectList(_context.Modules, "id_mod", "nom_mod");
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.id_mod = new SelectList(_context.Modules, "id_mod", "nom_mod");
             return View();
         }
 

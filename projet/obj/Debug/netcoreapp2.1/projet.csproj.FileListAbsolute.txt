@@ -291,6 +291,7 @@ C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\bin\Debug\netcoreapp2
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.pdb
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.dll
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\bin\Debug\netcoreapp2.1\projet.Views.pdb
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CoreCompileInputs.cache
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cache
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.RazorAssemblyInfo.cs
@@ -315,6 +316,11 @@ C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Listf.g.cshtml.cs
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\Listniv.g.cshtml.cs
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Admins\TudoEns.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres1\Create.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres1\Delete.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres1\Details.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres1\Edit.g.cshtml.cs
+C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres1\Index.g.cshtml.cs
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Create.g.cshtml.cs
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Delete.g.cshtml.cs
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\chapitres\Details.g.cshtml.cs
@@ -360,4 +366,3 @@ C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.dll
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.pdb
 C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
-C:\Users\azerty\Documents\GitHub\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csprojAssemblyReference.cache
