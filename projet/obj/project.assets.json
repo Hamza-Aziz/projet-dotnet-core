@@ -7277,7 +7277,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "Ec6gSQpRGc3htkUSTAzHjfH1rbSXsxvhK8QGU2v6qyJoM35SDAvxJuNvbC/MUZWG4trqQh1fgMuA1TiQw2cxtg==",
+      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "hasTools": true,
@@ -15279,23 +15279,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\azerty\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\azerty\\Documents\\GitHub\\projet-dotnet-core\\projet\\projet.csproj",
+      "projectUniqueName": "D:\\s8\\core\\projet-dotnet-core\\projet\\projet.csproj",
       "projectName": "projet",
-      "projectPath": "C:\\Users\\azerty\\Documents\\GitHub\\projet-dotnet-core\\projet\\projet.csproj",
-      "packagesPath": "C:\\Users\\azerty\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\azerty\\Documents\\GitHub\\projet-dotnet-core\\projet\\obj\\",
+      "projectPath": "D:\\s8\\core\\projet-dotnet-core\\projet\\projet.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\s8\\core\\projet-dotnet-core\\projet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\azerty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

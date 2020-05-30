@@ -52,7 +52,8 @@ namespace projet.Controllers
                              niveauOfModule = level.nom_niv,
                              idChapter = chapter.id_chap,
                              photoOfensignant = ensiegnant.photo,
-                             nameOfchapter = chapter.contenu
+                             nameOfchapter = chapter.contenu,
+                             typechp= chapter.type
 
                          });
             int countElements = 0; //on va afficher just les 4 dernier cours d'ou le besoin de ce variable
@@ -281,6 +282,7 @@ namespace projet.Controllers
                                              idChapter = chapter.id_chap,
                                              photoOfensignant = ensiegnant.photo,
                                              nameOfchapter = chapter.contenu,
+                                             typechp = chapter.type
                                          });
                 if (queryCoursesDispo.Count() == 0)
                 {

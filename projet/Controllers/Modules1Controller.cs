@@ -90,7 +90,8 @@ namespace projet.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View(@module);
         }
 

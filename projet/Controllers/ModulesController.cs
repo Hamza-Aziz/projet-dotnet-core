@@ -17,9 +17,8 @@ namespace projet.Controllers
     public class ModulesController : Controller
     {
         private readonly PrjContext _context;
-
+        public static IEnumerable<Module>   mode;
         private readonly IHostingEnvironment _hostingEnvironment;
-        private readonly int id;
         private List<Module> listMod = new List<Module>();
 
         private RepositoryModule s1;
@@ -36,6 +35,8 @@ namespace projet.Controllers
         public IActionResult Details(int id)
         {
             Module mod = s1.GetModbyID(id);
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View(mod);
         }
         // GET: Modules
@@ -86,7 +87,7 @@ namespace projet.Controllers
             {
                 _context.Add(@module);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index1));
+                return RedirectToAction(nameof(Index1), mode);
             }
             ViewData["Id"] = new SelectList(_context.Enseignants, "Id", "email", @module.Id);
             ViewData["id_niv"] = new SelectList(_context.Niveaus, "id_niv", "nom_niv", @module.id_niv);
@@ -141,7 +142,7 @@ namespace projet.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index1));
+                return RedirectToAction(nameof(Index1), mode);
             }
             ViewData["Id"] = new SelectList(_context.Enseignants, "Id", "email", @module.Id);
             ViewData["id_niv"] = new SelectList(_context.Niveaus, "id_niv", "nom_niv", @module.id_niv);
@@ -176,7 +177,7 @@ namespace projet.Controllers
             var @module = await _context.Modules.FindAsync(id);
             _context.Modules.Remove(@module);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index1));
+            return RedirectToAction(nameof(Index1), mode);
         }
         
         public IActionResult Index1()
@@ -196,10 +197,13 @@ namespace projet.Controllers
             }
 
 
-            var mode = s1.FindAllMod(id2);
-            ViewBag.nom = currentUserLastName;
-            ViewBag.prenom = currentUserFirstName;
-         
+            mode = s1.FindAllMod(id2);
+            HttpContext.Session.SetString("nom", currentUserLastName.ToString());
+
+            HttpContext.Session.SetString("prenom", currentUserFirstName.ToString());
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
+
             return View(mode);
         }
 

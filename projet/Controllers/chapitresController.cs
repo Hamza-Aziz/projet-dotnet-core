@@ -28,6 +28,8 @@ namespace projet.Controllers
         // GET: chapitres
         public async Task<IActionResult> Index()
         {
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             var prjContext = _context.chapitres.Include(c => c.Module);
             return View(await prjContext.ToListAsync());
         }
@@ -47,7 +49,8 @@ namespace projet.Controllers
             {
                 return NotFound();
             }
-
+                 ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View(chapitre);
         }
 
@@ -56,6 +59,8 @@ namespace projet.Controllers
         {
             //ViewData["id_mod"] = new SelectList(_context.Modules, "id_mod", "nom_mod");
             ViewBag.id_mod = new SelectList(_context.Modules, "id_mod", "nom_mod");
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View();
         }
         //[Bind("id_chap,type,contenu,date_depot,responsable,id_mod")] 
@@ -88,6 +93,8 @@ namespace projet.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewBag.id_mod = new SelectList(_context.Modules, "id_mod", "nom_mod");
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View();
         }
 
@@ -121,6 +128,8 @@ namespace projet.Controllers
                 return NotFound();
             }
             ViewData["id_mod"] = new SelectList(_context.Modules, "id_mod", "nom_mod", chapitre.id_mod);
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View(chapitre);
         }
 
@@ -157,6 +166,8 @@ namespace projet.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["id_mod"] = new SelectList(_context.Modules, "id_mod", "nom_mod", chapitre.id_mod);
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View(chapitre);
         }
 
@@ -175,7 +186,8 @@ namespace projet.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return View(chapitre);
         }
 
@@ -187,6 +199,8 @@ namespace projet.Controllers
             var chapitre = await _context.chapitres.FindAsync(id);
             _context.chapitres.Remove(chapitre);
             await _context.SaveChangesAsync();
+            ViewBag.nom = HttpContext.Session.GetString("nom");
+            ViewBag.prenom = HttpContext.Session.GetString("prenom");
             return RedirectToAction(nameof(Index));
         }
 

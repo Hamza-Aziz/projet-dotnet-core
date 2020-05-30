@@ -139,7 +139,7 @@ namespace projet.Controllers
                             }
                             else if (c == 6)
                             {
-                                
+                                    ens.role = "enseignant";
                                     ens.photo = row.GetCell(j).ToString();
                                 
                                     listEns.Add(ens);
@@ -209,6 +209,7 @@ namespace projet.Controllers
 
                 Enseignant ens = new Enseignant();
                 ens.nom = nom;
+                ens.role = "enseignant";
                 ens.photo = file.FileName;
                 ens.prenom = prenom;
                 ens.username = username;
