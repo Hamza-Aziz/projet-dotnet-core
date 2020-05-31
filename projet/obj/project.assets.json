@@ -15285,11 +15285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\s8\\core\\projet-dotnet-core\\projet\\projet.csproj",
+      "projectUniqueName": "D:\\s8\\Version git\\projet-dotnet-core\\projet\\projet.csproj",
       "projectName": "projet",
-      "projectPath": "D:\\s8\\core\\projet-dotnet-core\\projet\\projet.csproj",
+      "projectPath": "D:\\s8\\Version git\\projet-dotnet-core\\projet\\projet.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\s8\\core\\projet-dotnet-core\\projet\\obj\\",
+      "outputPath": "D:\\s8\\Version git\\projet-dotnet-core\\projet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

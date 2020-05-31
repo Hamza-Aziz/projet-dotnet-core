@@ -99,7 +99,7 @@
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
-                a
+                
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
@@ -115,27 +115,8 @@
             </div>
         </div>
 
-        <div class="search_input" id="search_input_box">
-            <div class="container">
-                <form class="d-flex justify-content-between" asp-action="Courses" method="post">
+     
 
-                    <select asp-items="@ViewBag.moduleInDataBase" name="moduleChoisis" id="moduleChoisis">
-                        @if ((ViewBag.moduleInDataBase as SelectList).Count() == 0)
-                        {
-                            <option value="">choisissez un niveau d'abords</option>
-                        }
-                        else
-                        {
-                            <option value="">filtrer par module</option>
-                        }
-                    </select>
-
-                    <input style="text-align:center" type="text" class="form-control" id="searchString" name="searchString" placeholder="Search Here">
-                    <button type="submit" class="genric-btn info-border circle" id="search" title="Search">gooo</button>
-                </form>
-            </div>
-
-        </div>
     </section>
     <!--================End Home Banner Area =================-->
     <!--=======================================================================debut resultat de recherche =============================================================-->
@@ -167,9 +148,9 @@
                                     </div>
                                 </div>
                                 <div class="course_content ">
-                                    <div style="height:160px;width:300px">
+                                    <div style="height:100px;width:300px">
                                         <h4>
-                                            <a asp-action="CoursesDetail" asp-route-id="@item.idChapter" style="font-size:15px;"><i class="fa fa-book"></i> @item.typechp</a>
+                                           <i class="fa fa-book"></i> @item.typechp
                                         </h4>
                                         <p>
                                             ce chapitre est publié dans le module @item.nameOfModule
@@ -278,9 +259,9 @@
                                 </div>
                             </div>
                             <div class="course_content">
-                                <div style="height:160px;width:300px">
+                                <div style="height:100px;width:300px">
                                     <h4>
-                                        <a asp-action="CoursesDetail" asp-route-id="@item.idChapter"  style="font-size:15px;"><i class="fa fa-book"></i> @item.typechp</a>
+                                        <i class="fa fa-book"></i> @item.typechp
                                     </h4>
                                     <p>
                                         ce chapitre est publié dans le module @item.nameOfModule
