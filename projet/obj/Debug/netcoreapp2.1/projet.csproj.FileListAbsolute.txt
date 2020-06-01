@@ -589,9 +589,7 @@ D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Delete.g.cshtml.cs
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Details.g.cshtml.cs
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Edit.g.cshtml.cs
-D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\ImportExcelAddEns.g.cshtml.cs
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\Index.g.cshtml.cs
-D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\ListExcelAddEns.g.cshtml.cs
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\TudoEns.g.cshtml.cs
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Create.g.cshtml.cs
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules\Delete.g.cshtml.cs
@@ -612,3 +610,5 @@ D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.Views
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.dll
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.pdb
 D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\projet.csproj.CopyComplete
+D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\ImportExcelAddModules.g.cshtml.cs
+D:\s8\Version git\projet-dotnet-core\projet\obj\Debug\netcoreapp2.1\Razor\Views\Modules1\ListExcelAddModules.g.cshtml.cs

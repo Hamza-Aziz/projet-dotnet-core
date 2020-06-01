@@ -199,7 +199,7 @@ namespace projet.Controllers
         }
 
         //page import excel file
-        public IActionResult ImportExcelAddEns()
+        public IActionResult ImportExcelAddModules()
         {
             Module m = new Module();
             List<Enseignant> listens = new List<Enseignant>();
@@ -218,7 +218,7 @@ namespace projet.Controllers
         {
 
             IFormFile file = Request.Form.Files[0];
-            string folderName = "FichierAddDBEnseignants";
+            string folderName = "FichierAddDBModules";
             string webRootPath = _hostingEnvironment.WebRootPath;
             string newPath = Path.Combine(webRootPath, folderName);
 
@@ -313,9 +313,9 @@ namespace projet.Controllers
 
             ViewBag.msg = "The list of Modules is imported into the database";
 
-            return View("ListExcelAddEns", listexcelmodu);
+            return View("ListExcelAddModules", listexcelmodu);
         }
-        public IActionResult ListExcelAddEns()
+        public IActionResult ListExcelAddModules()
         {
             ViewBag.msg = "The list of Modules is imported into the database";
             List<string> properties = listexcelmodu.Select(o => o.Enseignant.nom).ToList();

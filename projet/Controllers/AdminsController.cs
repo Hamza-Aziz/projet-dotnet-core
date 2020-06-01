@@ -135,19 +135,14 @@ namespace projet.Controllers
                             else if (c == 5)
                             {
                                     ens.telephone = row.GetCell(j).ToString();
-                                    c++;
-                            }
-                            else if (c == 6)
-                            {
                                     ens.role = "enseignant";
-                                    ens.photo = row.GetCell(j).ToString();
-                                
+                                    ens.photo = "default-user-image.png";
                                     listEns.Add(ens);
                                     repo.SaveEns(ens);
-                                  
+
                                     c = 0;
                                 }
-
+                          
 
                                
                         }

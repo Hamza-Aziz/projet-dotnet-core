@@ -64,7 +64,7 @@ using projet.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<style>\r\n    .center-div {\r\n        margin: 0 auto;\r\n    }\r\n</style>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(241, 451, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "664b7dd1efc7485b8ed680cf32c52caa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e052c3d2908c4e34b6858cd7bb1921f0", async() => {
                 BeginContext(247, 438, true);
                 WriteLiteral(@"
     <title>Bootstrap Example</title>
@@ -92,7 +92,7 @@ using projet.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(696, 1413, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd33539b647c43a58c6dc6ecc7ecc073", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7ac57c5067b48e69c9f4e434d50df04", async() => {
                 BeginContext(702, 202, true);
                 WriteLiteral("\r\n    <div class=\"center-div\">\r\n        <div class=\"container\">\r\n            <h1>Ces informations concernant ce chapitre</h1>\r\n            <br /><br />    <br />  \r\n            <p> Numero du chapitre : ");
                 EndContext();
